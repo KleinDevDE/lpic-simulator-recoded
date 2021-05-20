@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title langKey="main.projectName"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/dark.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/external/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/external/fontawesome-free-5.15.3-web/css/all.css"/>
+</head>
+<body>
+<div class="container h-100 vertical-and-horizontal-center">
+    <div class="row h-100 d-flex justify-content-center align-items-center">
+        <div class="col-12">
+            <div id="title" class="title" langkey="pages.%page%.title">
+                Pr&uuml;fungssimulator zur Vorbereitung auf die<br>
+                Linux Professional Institute Certification (LPIC)
+            </div>
+            <div id="pageContent" class="choiceBox">
+
+            </div>
+            <div class="copyrightInfo" langkey="main.copyrightInfo">
+                OnEducate Portable - Exam-Simulator Browserapplication in JavaScript<br/>
+                Software is published under the terms of General Public License Version 2
+            </div>
+        </div>
+    </div>
+    <div class="languageBar">
+        <img tabindex src="https://icons.iconarchive.com/icons/custom-icon-design/flat-europe-flag/24/Germany-icon.png" langCode="de_DE" onclick="changeLanguage(this)"/>
+        <img tabindex src="https://icons.iconarchive.com/icons/wikipedia/flags/24/US-United-States-Flag-icon.png" langCode="en_US" onclick="changeLanguage(this)"/>
+    </div>
+</div>
+<script src="assets/external/fontawesome-free-5.15.3-web/js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/consoleTools.js"></script>
+<script src="assets/js/general.js"></script>
+<script src="assets/js/PageManager.js"></script>
+<script src="assets/js/LanguageManager.js"></script>
+
+<script>
+    LanguageManager.loadCurrentLangFile();
+    PageManager.openPage('home');
+</script>
+</body>
+<html>

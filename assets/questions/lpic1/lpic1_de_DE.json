@@ -1,0 +1,3792 @@
+{
+  "aufgabenanzahl": "120",
+  "frage": [
+    {
+      "fragetitel": "Frage 1",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 1 im Buch.",
+      "fragetext": "Sie versuchen mit dem Kommando netstat -an herauszubekommen, welche Ports ein Computer abhört. Leider\n            bekommen Sie als Ergebnis eine lange unübersichtliche Auflistung.\n            Welches der folgenden Kommandos wird die gewünschten Informationen übersichtlich darstellen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 1",
+          "@richtig": "nein",
+          "#text": "netstat -an && grep LISTEN"
+        },
+        {
+          "@zuFrage": "Frage 1",
+          "@richtig": "ja",
+          "#text": "netstat -an | grep LISTEN"
+        },
+        {
+          "@zuFrage": "Frage 1",
+          "@richtig": "nein",
+          "#text": "netstat -an = grep LISTEN"
+        },
+        {
+          "@zuFrage": "Frage 1",
+          "@richtig": "nein",
+          "#text": "grep LISTEN |netstat -an"
+        },
+        {
+          "@zuFrage": "Frage 1",
+          "@richtig": "nein",
+          "#text": "grep netstat -l"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 2",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 2 im Buch.",
+      "fragetext": "Sie müssen herausfinden, welche Verzeichnisse und Dateien eines Webservers besonders oft besucht\n            werden. Zu diesem Zweck wollen Sie zunächst die Logdatei des Webservers so filtern, dass Sie eine\n            entsprechende Dateiliste erhalten, die nur noch die Verzeichnis und Dateinamen enthält.\n            Welches der folgenden Kommandos löst diese Aufgabe?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 2",
+          "@richtig": "nein",
+          "#text": "cut -f 7 /var/log/apache2/access.log > dateiliste"
+        },
+        {
+          "@zuFrage": "Frage 2",
+          "@richtig": "nein",
+          "#text": "cut -d \" \" /var/log/apache2/access.log > dateiliste"
+        },
+        {
+          "@zuFrage": "Frage 2",
+          "@richtig": "ja",
+          "#text": "cut -d \" \" -f 7 /var/log/apache2/access.log > dateiliste"
+        },
+        {
+          "@zuFrage": "Frage 2",
+          "@richtig": "nein",
+          "#text": "tail /var/log/apache2/access.log"
+        },
+        {
+          "@zuFrage": "Frage 2",
+          "@richtig": "nein",
+          "#text": "cat /var/log/apache2/access.log"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 3",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 3 im Buch.",
+      "fragetext": "Sie müssen die Version des laufenden Kernels ermitteln. Mit welchem Kommando erhalten Sie\n            ausschließlich diese Information?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 3",
+          "@richtig": "nein",
+          "#text": "uname -a"
+        },
+        {
+          "@zuFrage": "Frage 3",
+          "@richtig": "ja",
+          "#text": "uname -r"
+        },
+        {
+          "@zuFrage": "Frage 3",
+          "@richtig": "nein",
+          "#text": "ver -l"
+        },
+        {
+          "@zuFrage": "Frage 3",
+          "@richtig": "nein",
+          "#text": "version -k"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 4",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 4 im Buch.",
+      "fragetext": "Nach der Integration eines neuen Moduls in den laufenden Kernel wollen Sie überprüfen, ob der Kernel\n            das Modul auch geladen hat.\n            Welche der folgenden Kommandos können sie dafür verwenden? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 4",
+          "@richtig": "ja",
+          "#text": "cat /proc/modules"
+        },
+        {
+          "@zuFrage": "Frage 4",
+          "@richtig": "nein",
+          "#text": "insmod"
+        },
+        {
+          "@zuFrage": "Frage 4",
+          "@richtig": "nein",
+          "#text": "rmmod"
+        },
+        {
+          "@zuFrage": "Frage 4",
+          "@richtig": "ja",
+          "#text": "lsmod"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 5",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 5 im Buch.",
+      "fragetext": "Sie wollen dem Autor des Kernelmoduls 8139too eine E-Mail senden.\n            Welches Kommando ist geeignet, an Informationen über den zuständigen Programmierer zu kommen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 5",
+          "@richtig": "ja",
+          "#text": "modinfo -a 8139too"
+        },
+        {
+          "@zuFrage": "Frage 5",
+          "@richtig": "nein",
+          "#text": "insmod 8139"
+        },
+        {
+          "@zuFrage": "Frage 5",
+          "@richtig": "nein",
+          "#text": "lsmod"
+        },
+        {
+          "@zuFrage": "Frage 5",
+          "@richtig": "nein",
+          "#text": "modprobe"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 6",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 6 im Buch.",
+      "fragetext": "Welches Programm ist geeignet, Module des laufenden Kernels zu entladen? Geben Sie nur das Programm\n            ohne Optionen an!\n\n\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 6",
+          "@richtig": "ja",
+          "#text": "rmmod"
+        },
+        {
+          "@zuFrage": "Frage 6",
+          "@richtig": "ja",
+          "#text": "modprobe"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 7",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 7 im Buch.",
+      "fragetext": "Sie beabsichtigen, ein Modul in den laufenden Kernel zu installieren. Leider wissen Sie nicht, ob das\n            zu installierende Modul von anderen Modulen abhängt.\n            Welches Kommando löst bei der Installation von Modulen die Abhängigkeiten automatisch auf?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 7",
+          "@richtig": "nein",
+          "#text": "insmod –auto"
+        },
+        {
+          "@zuFrage": "Frage 7",
+          "@richtig": "nein",
+          "#text": "autoinsmod"
+        },
+        {
+          "@zuFrage": "Frage 7",
+          "@richtig": "nein",
+          "#text": "depmod"
+        },
+        {
+          "@zuFrage": "Frage 7",
+          "@richtig": "ja",
+          "#text": "modprobe"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 8",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 8 im Buch.",
+      "fragetext": "Sie beabsichtigen, ein Modul aus dem laufenden Kernel zu entfernen. Mit welchen Programmen können Sie\n            diese Aufgabe durchführen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 8",
+          "@richtig": "nein",
+          "#text": "rpm"
+        },
+        {
+          "@zuFrage": "Frage 8",
+          "@richtig": "nein",
+          "#text": "insmod"
+        },
+        {
+          "@zuFrage": "Frage 8",
+          "@richtig": "ja",
+          "#text": "modprobe"
+        },
+        {
+          "@zuFrage": "Frage 8",
+          "@richtig": "ja",
+          "#text": "rmmod"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 9",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 9 im Buch.",
+      "fragetext": "Sie müssen dafür sorgen, dass der Kernel einem speziellen Hardwaregerät, einen bestimmten IRQ und\n            einen DMA-Kanal zuordnet.\n            Welche Konfigurationsdateien kommen hierfür in Frage? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 9",
+          "@richtig": "nein",
+          "#text": "/proc/irq"
+        },
+        {
+          "@zuFrage": "Frage 9",
+          "@richtig": "ja",
+          "#text": "modules.conf"
+        },
+        {
+          "@zuFrage": "Frage 9",
+          "@richtig": "ja",
+          "#text": "modprobe.conf"
+        },
+        {
+          "@zuFrage": "Frage 9",
+          "@richtig": "nein",
+          "#text": "modules.dep"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 10",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 10 im Buch.",
+      "fragetext": "Sie müssen die Datei modules.dep neu erzeugen. Mit welchem Kommando können Sie diese Aufgabe\n            durchführen?\n\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 10",
+        "@richtig": "ja",
+        "#text": "depmod"
+      }
+    },
+    {
+      "fragetitel": "Frage 11",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 11 im Buch.",
+      "fragetext": "Sie erwägen die Erstellung einer neuen modules.dep unter Verwendung von depmod. Vorher möchten Sie\n            aber wissen, wie depmod die Datei modules.dep konfigurieren würde.\n            Welches Kommando werden Sie ausführen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 11",
+          "@richtig": "ja",
+          "#text": "depmod -n"
+        },
+        {
+          "@zuFrage": "Frage 11",
+          "@richtig": "nein",
+          "#text": "depmod -A"
+        },
+        {
+          "@zuFrage": "Frage 11",
+          "@richtig": "nein",
+          "#text": "depmod -b"
+        },
+        {
+          "@zuFrage": "Frage 11",
+          "@richtig": "nein",
+          "#text": "modprobe-n"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 12",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 12 im Buch.",
+      "fragetext": "Sie möchten in das Verzeichnis wechseln, in dem sich wahrscheinlich die Quellen des laufenden Kernels\n            befinden. Wo werden Sie am wahrscheinlichsten fündig?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 12",
+          "@richtig": "nein",
+          "#text": "/boot"
+        },
+        {
+          "@zuFrage": "Frage 12",
+          "@richtig": "nein",
+          "#text": "/etc/kernelsources"
+        },
+        {
+          "@zuFrage": "Frage 12",
+          "@richtig": "ja",
+          "#text": "/usr/src/linux"
+        },
+        {
+          "@zuFrage": "Frage 12",
+          "@richtig": "nein",
+          "#text": "/lib/modules"
+        },
+        {
+          "@zuFrage": "Frage 12",
+          "@richtig": "nein",
+          "#text": "/proc/modules"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 13",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 13 im Buch.",
+      "fragetext": "Sie beabsichtigen auf einer IDE-Festplatte, die als Master am sekundären IDE-Kanal eines Computers\n            angeschlossen ist, eine zweite primäre Partition anzulegen.\n            Welche Gerätedatei wird diese Partition wohl hinterher verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 13",
+          "@richtig": "nein",
+          "#text": "/dev/sdb2"
+        },
+        {
+          "@zuFrage": "Frage 13",
+          "@richtig": "nein",
+          "#text": "/dev/hdd2"
+        },
+        {
+          "@zuFrage": "Frage 13",
+          "@richtig": "nein",
+          "#text": "/dev/hda1"
+        },
+        {
+          "@zuFrage": "Frage 13",
+          "@richtig": "ja",
+          "#text": "/dev/hdc2"
+        },
+        {
+          "@zuFrage": "Frage 13",
+          "@richtig": "nein",
+          "#text": "/dev/sda3"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 14",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 14 im Buch.",
+      "fragetext": "Geben Sie die erste logische Partition einer SCSI-Festplatte unter der Annahme an, dass die zu\n            verwendende erweiterte Partition /dev/sde2 ist.\n\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 14",
+        "@richtig": "ja",
+        "#text": "/dev/sde5"
+      }
+    },
+    {
+      "fragetitel": "Frage 15",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 15 im Buch.",
+      "fragetext": "Sie müssen ermitteln, welche Interrupts (IRQ) in einem System durch welche Geräte belegt sind.\n            Welche Kommandos können Sie ausführen, um die benötigten Informationen zu erhalten? (Wählen Sie zwei\n            Antworten aus!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 15",
+          "@richtig": "nein",
+          "#text": "less /proc/irq"
+        },
+        {
+          "@zuFrage": "Frage 15",
+          "@richtig": "nein",
+          "#text": "cat /lib/modules/"
+        },
+        {
+          "@zuFrage": "Frage 15",
+          "@richtig": "nein",
+          "#text": "cat /proc/modules"
+        },
+        {
+          "@zuFrage": "Frage 15",
+          "@richtig": "ja",
+          "#text": "procinfo"
+        },
+        {
+          "@zuFrage": "Frage 15",
+          "@richtig": "ja",
+          "#text": "cat /proc/interrupts"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 16",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 16 im Buch.",
+      "fragetext": "Sie benötigen eine Liste der SCSI-Geräte, die an einem Computer angeschlossen sind. Leider steht auf\n            dem System das Kommando scsiinfo nicht zur Verfügung und Sie haben aufgrund einer Internetstörung auch keine\n            Möglichkeit es kurzfristig zu installieren. Mit welchem Kommando erhalten Sie dennoch die benötigte\n            Aufstellung?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 16",
+          "@richtig": "nein",
+          "#text": "cat /lib/modules/"
+        },
+        {
+          "@zuFrage": "Frage 16",
+          "@richtig": "nein",
+          "#text": "cat /etc/fstab"
+        },
+        {
+          "@zuFrage": "Frage 16",
+          "@richtig": "nein",
+          "#text": "cat /etc/mtab"
+        },
+        {
+          "@zuFrage": "Frage 16",
+          "@richtig": "nein",
+          "#text": "fdisk -l"
+        },
+        {
+          "@zuFrage": "Frage 16",
+          "@richtig": "ja",
+          "#text": "cat /proc/scsi/scsi"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 17",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 17 im Buch.",
+      "fragetext": "Sie benötigen eine möglichst genaue Aufstellung über die in einem Computer verwendeten PCI-Geräte.\n            Welches ist das beste Kommando für eine exakte Ausgabe?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 17",
+          "@richtig": "nein",
+          "#text": "lspci"
+        },
+        {
+          "@zuFrage": "Frage 17",
+          "@richtig": "nein",
+          "#text": "pciinfo"
+        },
+        {
+          "@zuFrage": "Frage 17",
+          "@richtig": "nein",
+          "#text": "ps"
+        },
+        {
+          "@zuFrage": "Frage 17",
+          "@richtig": "nein",
+          "#text": "rpm"
+        },
+        {
+          "@zuFrage": "Frage 17",
+          "@richtig": "ja",
+          "#text": "lspci -vvv"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 18",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 18 im Buch.",
+      "fragetext": "Sie benötigen eine Auflistung der in einem Gerät verwendeten USB-Busse und aller angeschlossener\n            USB-Geräte.\n            Welches Kommando können Sie verwenden, um die benötigten Informationen zu erhalten?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 18",
+          "@richtig": "ja",
+          "#text": "lsusb -v"
+        },
+        {
+          "@zuFrage": "Frage 18",
+          "@richtig": "nein",
+          "#text": "lspci"
+        },
+        {
+          "@zuFrage": "Frage 18",
+          "@richtig": "nein",
+          "#text": "ps aux"
+        },
+        {
+          "@zuFrage": "Frage 18",
+          "@richtig": "nein",
+          "#text": "top"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 19",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 19 im Buch.",
+      "fragetext": "Welcher der folgenden Treiber (Kernelmodule) unterstützt die Verwendung von USB 2.0 Geräten?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 19",
+          "@richtig": "nein",
+          "#text": "usb-uhci.o"
+        },
+        {
+          "@zuFrage": "Frage 19",
+          "@richtig": "nein",
+          "#text": "usb-ohci.o"
+        },
+        {
+          "@zuFrage": "Frage 19",
+          "@richtig": "ja",
+          "#text": "usb-ehci.o"
+        },
+        {
+          "@zuFrage": "Frage 19",
+          "@richtig": "nein",
+          "#text": "usb_storage.o"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 20",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 20 im Buch.",
+      "fragetext": "Einer Ihrer Benutzer beschwert sich, dass er zwar USB Memory Sticks aber keine USB-Maus und\n            USB-Tastatur an seinem System verwenden kann.\n            Welches Modul werden Sie dem Kernel des Computers hinzufügen müssen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 20",
+          "@richtig": "nein",
+          "#text": "usb-uhci.o"
+        },
+        {
+          "@zuFrage": "Frage 20",
+          "@richtig": "nein",
+          "#text": "usb-ohci.o"
+        },
+        {
+          "@zuFrage": "Frage 20",
+          "@richtig": "nein",
+          "#text": "usb-ehci.o"
+        },
+        {
+          "@zuFrage": "Frage 20",
+          "@richtig": "ja",
+          "#text": "hid.o"
+        },
+        {
+          "@zuFrage": "Frage 20",
+          "@richtig": "nein",
+          "#text": "usb_storage.o"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 21",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 21 im Buch.",
+      "fragetext": "Welche der folgenden sind Dämonen, die für die automatische Konfiguration von USB-Geräten verwendet\n            werden?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 21",
+          "@richtig": "ja",
+          "#text": "usbmgr"
+        },
+        {
+          "@zuFrage": "Frage 21",
+          "@richtig": "nein",
+          "#text": "bind"
+        },
+        {
+          "@zuFrage": "Frage 21",
+          "@richtig": "ja",
+          "#text": "hotplug"
+        },
+        {
+          "@zuFrage": "Frage 21",
+          "@richtig": "nein",
+          "#text": "ehci.o"
+        },
+        {
+          "@zuFrage": "Frage 21",
+          "@richtig": "nein",
+          "#text": "uhci.o"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 22",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 22 im Buch.",
+      "fragetext": "Welches der folgenden Verzeichnisse enthält die Gerätedateien eines Linux Systems?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 22",
+          "@richtig": "nein",
+          "#text": "/etc"
+        },
+        {
+          "@zuFrage": "Frage 22",
+          "@richtig": "nein",
+          "#text": "/proc"
+        },
+        {
+          "@zuFrage": "Frage 22",
+          "@richtig": "nein",
+          "#text": "/home"
+        },
+        {
+          "@zuFrage": "Frage 22",
+          "@richtig": "nein",
+          "#text": "/usr"
+        },
+        {
+          "@zuFrage": "Frage 22",
+          "@richtig": "ja",
+          "#text": "/dev"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 23",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 23 im Buch.",
+      "fragetext": "Welche Komponente ist bei neueren Linux-Versionen für die Verwaltung des Geräteverzeichnis /dev\n            zuständig?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 23",
+          "@richtig": "nein",
+          "#text": "hald"
+        },
+        {
+          "@zuFrage": "Frage 23",
+          "@richtig": "ja",
+          "#text": "udev"
+        },
+        {
+          "@zuFrage": "Frage 23",
+          "@richtig": "nein",
+          "#text": "dbus"
+        },
+        {
+          "@zuFrage": "Frage 23",
+          "@richtig": "nein",
+          "#text": "sshd"
+        },
+        {
+          "@zuFrage": "Frage 23",
+          "@richtig": "nein",
+          "#text": "init"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 24",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 24 im Buch.",
+      "fragetext": "Sie möchten sich ansehen, welche USB-Geräte mit einem Computer verbunden sind.\n            Welches Kommando werden Sie verwenden? (Nennen Sie nur das Kommando ohne Optionen!)\n\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 24",
+        "@richtig": "ja",
+        "#text": "lsusb"
+      }
+    },
+    {
+      "fragetitel": "Frage 25",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 25 im Buch.",
+      "fragetext": "Wo befindet sich auf einer Festplatte die Partitionstabelle?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 25",
+          "@richtig": "nein",
+          "#text": "am Anfang des Bootsektors"
+        },
+        {
+          "@zuFrage": "Frage 25",
+          "@richtig": "ja",
+          "#text": "am Ende des MBR"
+        },
+        {
+          "@zuFrage": "Frage 25",
+          "@richtig": "nein",
+          "#text": "im BIOS"
+        },
+        {
+          "@zuFrage": "Frage 25",
+          "@richtig": "nein",
+          "#text": "in den ersten 512 Byte des Bootloaders"
+        },
+        {
+          "@zuFrage": "Frage 25",
+          "@richtig": "nein",
+          "#text": "im letzten Sektor der Festplatte"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 26",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 26 im Buch.",
+      "fragetext": "Bei welchen der folgenden Komponenten handelt es sich um einen Bootloader?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 26",
+          "@richtig": "nein",
+          "#text": "MBR"
+        },
+        {
+          "@zuFrage": "Frage 26",
+          "@richtig": "ja",
+          "#text": "grub"
+        },
+        {
+          "@zuFrage": "Frage 26",
+          "@richtig": "nein",
+          "#text": "mkfs"
+        },
+        {
+          "@zuFrage": "Frage 26",
+          "@richtig": "ja",
+          "#text": "lilo"
+        },
+        {
+          "@zuFrage": "Frage 26",
+          "@richtig": "nein",
+          "#text": "fdisk"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 27",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 27 im Buch.",
+      "fragetext": "Eine an ein System angeschlossene USB-Festplatte weist häufig Lesefehler auf. Das Ergebnis sind lange\n            Wartezeiten beim Zugriff auf Dateien. Sie müssen herausfinden, ob es kernelbezogene Meldungen zu diesem\n            Problem gibt.\n            Welche Möglichkeiten stehen Ihnen zur Verfügung? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 27",
+          "@richtig": "ja",
+          "#text": "Geben Sie dmesg ein und suchen Sie nach Fehlern bezüglich USB und\n            Dateisystem."
+        },
+        {
+          "@zuFrage": "Frage 27",
+          "@richtig": "nein",
+          "#text": "Sichern Sie die Festplatte und führen Sie eine Neuformatierung durch.\n            Stellen Sie die Daten anschließend wieder her."
+        },
+        {
+          "@zuFrage": "Frage 27",
+          "@richtig": "nein",
+          "#text": "Durchsuchen Sie /proc/sys/kernel nach Fehlermeldungen."
+        },
+        {
+          "@zuFrage": "Frage 27",
+          "@richtig": "nein",
+          "#text": "Durchsuchen Sie /var/log/kernel nach Fehlermeldungen."
+        },
+        {
+          "@zuFrage": "Frage 27",
+          "@richtig": "ja",
+          "#text": "Suchen Sie nach kernel in der Datei /var/log/messages"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 28",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 28 im Buch.",
+      "fragetext": "Sie müssen verhindern, dass während Sie Wartungsarbeiten durchführen, irgendein Benutzer eine\n            Verbindung zu einem System aufbaut. Mit welchem Kommando können Sie die Verbindungen blockieren?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 28",
+          "@richtig": "nein",
+          "#text": "iptables -t filter -L"
+        },
+        {
+          "@zuFrage": "Frage 28",
+          "@richtig": "nein",
+          "#text": "ifconfig eth1 down"
+        },
+        {
+          "@zuFrage": "Frage 28",
+          "@richtig": "nein",
+          "#text": "logout"
+        },
+        {
+          "@zuFrage": "Frage 28",
+          "@richtig": "ja",
+          "#text": "init 1"
+        },
+        {
+          "@zuFrage": "Frage 28",
+          "@richtig": "nein",
+          "#text": "init 6"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 29",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 29 im Buch.",
+      "fragetext": "Wie heißt der Vater aller Prozesse und welche PID (Process ID) verwendet er?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 29",
+          "@richtig": "nein",
+          "#text": "init mit PID 100"
+        },
+        {
+          "@zuFrage": "Frage 29",
+          "@richtig": "nein",
+          "#text": "initd mit PID 100"
+        },
+        {
+          "@zuFrage": "Frage 29",
+          "@richtig": "ja",
+          "#text": "init mit PID 1"
+        },
+        {
+          "@zuFrage": "Frage 29",
+          "@richtig": "nein",
+          "#text": "initd mit PID 0"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 30",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 30 im Buch.",
+      "fragetext": "Sie haben Änderungen an der Konfigurationsdatei /etc/inittab eines Cent OS Computers vorgenommen. Sie\n            stellen fest, dass sich diese Änderungen nicht wie gewünscht auswirken.\n            Welches Kommando werden Sie eingeben, damit die Änderungen auch ohne einen Neustart des Systems greifen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 30",
+          "@richtig": "ja",
+          "#text": "telinit q"
+        },
+        {
+          "@zuFrage": "Frage 30",
+          "@richtig": "nein",
+          "#text": "init q"
+        },
+        {
+          "@zuFrage": "Frage 30",
+          "@richtig": "nein",
+          "#text": "logout – anschließend neu anmelden"
+        },
+        {
+          "@zuFrage": "Frage 30",
+          "@richtig": "nein",
+          "#text": "init 6"
+        },
+        {
+          "@zuFrage": "Frage 30",
+          "@richtig": "nein",
+          "#text": "shutdown -r now"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 31",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 31 im Buch.",
+      "fragetext": "Wählen Sie aus den folgende Verzeichnissen zwei aus, in denen sich üblicherweise init-Skripte\n            befinden!",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 31",
+          "@richtig": "nein",
+          "#text": "/etc/inittab"
+        },
+        {
+          "@zuFrage": "Frage 31",
+          "@richtig": "ja",
+          "#text": "/etc/init.d"
+        },
+        {
+          "@zuFrage": "Frage 31",
+          "@richtig": "nein",
+          "#text": "/proc"
+        },
+        {
+          "@zuFrage": "Frage 31",
+          "@richtig": "nein",
+          "#text": "/lib"
+        },
+        {
+          "@zuFrage": "Frage 31",
+          "@richtig": "ja",
+          "#text": "/etc/rc.d"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 32",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 32 im Buch.",
+      "fragetext": "Welches der folgenden Kommandos führt ohne Benachrichtigung der angemeldeten Benutzer zu einem\n            Neustart des Systems?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 32",
+          "@richtig": "nein",
+          "#text": "shutdown -r now"
+        },
+        {
+          "@zuFrage": "Frage 32",
+          "@richtig": "nein",
+          "#text": "init 0"
+        },
+        {
+          "@zuFrage": "Frage 32",
+          "@richtig": "nein",
+          "#text": "halt"
+        },
+        {
+          "@zuFrage": "Frage 32",
+          "@richtig": "nein",
+          "#text": "poweroff"
+        },
+        {
+          "@zuFrage": "Frage 32",
+          "@richtig": "ja",
+          "#text": "init 6"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 33",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 33 im Buch.",
+      "fragetext": "Sie müssen einen Server nach der Installation eines neuen Kernels neu starten. Damit der Neustart\n            nicht unnötig die Erreichbarkeit des Servers verzögert, müssen Sie verhindern, dass während des Neustarts\n            eine Routineprüfung der Dateisysteme stattfindet.\n            Welches Kommando werden Sie für den Neustart verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 33",
+          "@richtig": "nein",
+          "#text": "shutdown -rk now"
+        },
+        {
+          "@zuFrage": "Frage 33",
+          "@richtig": "nein",
+          "#text": "shutdown -rF now"
+        },
+        {
+          "@zuFrage": "Frage 33",
+          "@richtig": "nein",
+          "#text": "init 0"
+        },
+        {
+          "@zuFrage": "Frage 33",
+          "@richtig": "nein",
+          "#text": "init 6"
+        },
+        {
+          "@zuFrage": "Frage 33",
+          "@richtig": "ja",
+          "#text": "shutdown -rf now"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 34",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 34 im Buch.",
+      "fragetext": "Sie haben Kernelmeldungen bezüglich des Dateisystems erhalten, die auf einen Fehler schließen lassen.\n            Da es sich hierbei um die Systemfestplatte handelt, ist eine Überprüfung mittels fsck im laufenden Betrieb\n            nicht möglich. Sie wollen das System sofort neu starten und eine Dateisystemüberprüfung währendes\n            Systemstarts erzwingen. Geben Sie ein geeignetes Kommando ein!\n\n\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 34",
+          "@richtig": "ja",
+          "#text": "shutdown -rF now"
+        },
+        {
+          "@zuFrage": "Frage 34",
+          "@richtig": "ja",
+          "#text": "shutdown -r -F now"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 35",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 35 im Buch.",
+      "fragetext": "Sie haben auf einem System ein neues Programm installiert. Das Programm lag als tar-Ball vor. Weil\n            das neue Programm Bibliotheken verwendet, die vorher auf ihrem System nicht vorhanden waren, müssen diese\n            nun registriert werden.\n            Welches Kommando können Sie hierfür verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 35",
+          "@richtig": "ja",
+          "#text": "ldconfig"
+        },
+        {
+          "@zuFrage": "Frage 35",
+          "@richtig": "nein",
+          "#text": "ldd"
+        },
+        {
+          "@zuFrage": "Frage 35",
+          "@richtig": "nein",
+          "#text": "ld.so.conf"
+        },
+        {
+          "@zuFrage": "Frage 35",
+          "@richtig": "nein",
+          "#text": "/lib/modules"
+        },
+        {
+          "@zuFrage": "Frage 35",
+          "@richtig": "nein",
+          "#text": "tar -xvzf"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 36",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 36 im Buch.",
+      "fragetext": "Sie wollen herausbekommen, von welchen Bibliotheken (Librarys) die Shell bash abhängt.\n            Welches Kommando wird Ihnen hier helfen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 36",
+          "@richtig": "nein",
+          "#text": "ldconfig /bin/bash"
+        },
+        {
+          "@zuFrage": "Frage 36",
+          "@richtig": "nein",
+          "#text": "ldd /var/bash"
+        },
+        {
+          "@zuFrage": "Frage 36",
+          "@richtig": "nein",
+          "#text": "cat ld.so.conf"
+        },
+        {
+          "@zuFrage": "Frage 36",
+          "@richtig": "ja",
+          "#text": "ldd /bin/bash"
+        },
+        {
+          "@zuFrage": "Frage 36",
+          "@richtig": "nein",
+          "#text": "cat ld.so.cache"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 37",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 37 im Buch.",
+      "fragetext": "Sie beabsichtigen, ein Debian Paket zu deinstallieren. Die zum Programm gehörenden\n            Konfigurationsdateien sollen ebenfalls entfernt werden. Wie beginnen Sie das Kommando zur Deinstallation?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 37",
+          "@richtig": "nein",
+          "#text": "dpkg -r"
+        },
+        {
+          "@zuFrage": "Frage 37",
+          "@richtig": "ja",
+          "#text": "dpkg --purge"
+        },
+        {
+          "@zuFrage": "Frage 37",
+          "@richtig": "nein",
+          "#text": "dpkg -e"
+        },
+        {
+          "@zuFrage": "Frage 37",
+          "@richtig": "nein",
+          "#text": "rpm -e"
+        },
+        {
+          "@zuFrage": "Frage 37",
+          "@richtig": "nein",
+          "#text": "apt-get install"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 38",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 38 im Buch.",
+      "fragetext": "Sie beabsichtigen, auf einem Debian basierten System über die Kommandozeile ein Programmpaket aus dem\n            Internet herunter zu laden und zu installieren.\n            Welches Programm können Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 38",
+          "@richtig": "nein",
+          "#text": "dpkg"
+        },
+        {
+          "@zuFrage": "Frage 38",
+          "@richtig": "nein",
+          "#text": "alien"
+        },
+        {
+          "@zuFrage": "Frage 38",
+          "@richtig": "ja",
+          "#text": "apt-get"
+        },
+        {
+          "@zuFrage": "Frage 38",
+          "@richtig": "nein",
+          "#text": "yum"
+        },
+        {
+          "@zuFrage": "Frage 38",
+          "@richtig": "nein",
+          "#text": "Synaptik-Paketverwaltung"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 39",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 39 im Buch.",
+      "fragetext": "Vor der Installation eines neuen Programms auf einem Debian System wollen Sie die Liste der\n            verfügbaren Programme aktualisieren.\n            Welches Kommando werden Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 39",
+          "@richtig": "ja",
+          "#text": "apt-get update"
+        },
+        {
+          "@zuFrage": "Frage 39",
+          "@richtig": "nein",
+          "#text": "apt-get upgrade"
+        },
+        {
+          "@zuFrage": "Frage 39",
+          "@richtig": "nein",
+          "#text": "yum upgrade"
+        },
+        {
+          "@zuFrage": "Frage 39",
+          "@richtig": "nein",
+          "#text": "yum update"
+        },
+        {
+          "@zuFrage": "Frage 39",
+          "@richtig": "nein",
+          "#text": "apt-get reconfigure"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 40",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 40 im Buch.",
+      "fragetext": "Sie beabsichtigen auf einem System, das auf Debian basiert, alle installierten Programme zu\n            aktualisieren. Der Vorgang sollte möglichst automatisiert ablaufen und benötigte Dateien automatisch aus dem\n            Internet herunter geladen werden.\n            Welches Kommando können Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 40",
+          "@richtig": "nein",
+          "#text": "apt-get update"
+        },
+        {
+          "@zuFrage": "Frage 40",
+          "@richtig": "ja",
+          "#text": "apt-get upgrade"
+        },
+        {
+          "@zuFrage": "Frage 40",
+          "@richtig": "nein",
+          "#text": "yum upgrade"
+        },
+        {
+          "@zuFrage": "Frage 40",
+          "@richtig": "nein",
+          "#text": "yum update"
+        },
+        {
+          "@zuFrage": "Frage 40",
+          "@richtig": "nein",
+          "#text": "apt-get reconfigure"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 41",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 41 im Buch.",
+      "fragetext": "Sie müssen das nicht mehr benötigte Paket dhcp3-server von einem Computer deinstallieren. Die\n            Konfigurationsdateien des DHCP-Servers dürfen nicht entfernt werden.\n            Welche der folgenden Kommandos führen hier zum Ziel? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 41",
+          "@richtig": "ja",
+          "#text": "apt-get remove dhcp3-server"
+        },
+        {
+          "@zuFrage": "Frage 41",
+          "@richtig": "ja",
+          "#text": "aptitude remove dhcp3-server"
+        },
+        {
+          "@zuFrage": "Frage 41",
+          "@richtig": "nein",
+          "#text": "dpkg –purge dhcp3-server"
+        },
+        {
+          "@zuFrage": "Frage 41",
+          "@richtig": "nein",
+          "#text": "rpm -ihv dhcp3-server"
+        },
+        {
+          "@zuFrage": "Frage 41",
+          "@richtig": "nein",
+          "#text": "rpm -Uhv dhcp3-server"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 42",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 42 im Buch.",
+      "fragetext": "Sie planen die Installation mehrerer Programme auf einem Debian-System. Auf das System haben Sie\n            lediglich Fernzugriff über SSH ohne X11-Tunnel, wollen aber dennoch eine Menü geführte Installation\n            durchführen.\n            Welche Programme können Sie hierfür verwenden? (Wählen Sie zwei Möglichkeiten aus!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 42",
+          "@richtig": "nein",
+          "#text": "apt-get"
+        },
+        {
+          "@zuFrage": "Frage 42",
+          "@richtig": "nein",
+          "#text": "dpkg -i"
+        },
+        {
+          "@zuFrage": "Frage 42",
+          "@richtig": "ja",
+          "#text": "aptitude"
+        },
+        {
+          "@zuFrage": "Frage 42",
+          "@richtig": "nein",
+          "#text": "synaptic"
+        },
+        {
+          "@zuFrage": "Frage 42",
+          "@richtig": "ja",
+          "#text": "dselect"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 43",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 43 im Buch.",
+      "fragetext": "Sie planen die Installation eines Programms, das lediglich als rpm-Paket vorliegt, auf einem\n            Ubuntu-System.\n            Welches Hilfsmittel können Sie verwenden, um das rpm-Paket in ein dpkg-Paket zu konvertieren?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 43",
+          "@richtig": "nein",
+          "#text": "rpm"
+        },
+        {
+          "@zuFrage": "Frage 43",
+          "@richtig": "nein",
+          "#text": "dpkg"
+        },
+        {
+          "@zuFrage": "Frage 43",
+          "@richtig": "nein",
+          "#text": "aptitude"
+        },
+        {
+          "@zuFrage": "Frage 43",
+          "@richtig": "nein",
+          "#text": "apt-cache"
+        },
+        {
+          "@zuFrage": "Frage 43",
+          "@richtig": "ja",
+          "#text": "alien"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 44",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 44 im Buch.",
+      "fragetext": "Sie wollen ein Programm auf einem Fedora-System installieren. Sie vermuten aufgrund der Größe des\n            Pakets, dass die Installation lange dauern kann. Deshalb wollen Sie während der Installation über den\n            Fortschritt informiert werden.\n            Welches Kommando werden Sie dem Paketnamen voranstellen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 44",
+          "@richtig": "nein",
+          "#text": "yum search"
+        },
+        {
+          "@zuFrage": "Frage 44",
+          "@richtig": "nein",
+          "#text": "rpm -U"
+        },
+        {
+          "@zuFrage": "Frage 44",
+          "@richtig": "ja",
+          "#text": "rpm -ihv"
+        },
+        {
+          "@zuFrage": "Frage 44",
+          "@richtig": "nein",
+          "#text": "dpkg -i"
+        },
+        {
+          "@zuFrage": "Frage 44",
+          "@richtig": "nein",
+          "#text": "apt-get install"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 45",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 45 im Buch.",
+      "fragetext": "Sie beabsichtigen auf einem Red Hat basierten System eine Liste aller über das Paketmanagement\n            installierten Pakete zu erstellen.\n            Welches Kommando könnte hier nützlich sein?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 45",
+          "@richtig": "nein",
+          "#text": "rpm -qR"
+        },
+        {
+          "@zuFrage": "Frage 45",
+          "@richtig": "nein",
+          "#text": "rpm -ql"
+        },
+        {
+          "@zuFrage": "Frage 45",
+          "@richtig": "nein",
+          "#text": "rpm -V"
+        },
+        {
+          "@zuFrage": "Frage 45",
+          "@richtig": "ja",
+          "#text": "rpm -qa"
+        },
+        {
+          "@zuFrage": "Frage 45",
+          "@richtig": "nein",
+          "#text": "rpm -Uhv"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 46",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 46 im Buch.",
+      "fragetext": "In welchem Verzeichnis befinden sich üblicherweise die Dateien mit Verweisen auf Quellen für\n            rpm-Pakete, die yum verwendet?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 46",
+          "@richtig": "nein",
+          "#text": "/etc/yum.conf"
+        },
+        {
+          "@zuFrage": "Frage 46",
+          "@richtig": "nein",
+          "#text": "/etc/apt/sources.list"
+        },
+        {
+          "@zuFrage": "Frage 46",
+          "@richtig": "nein",
+          "#text": "/var/cache/yum"
+        },
+        {
+          "@zuFrage": "Frage 46",
+          "@richtig": "nein",
+          "#text": "/etc/apt/apt.conf"
+        },
+        {
+          "@zuFrage": "Frage 46",
+          "@richtig": "ja",
+          "#text": "/etc/yum.repos.d"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 47",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 47 im Buch.",
+      "fragetext": "Sie konfigurieren ein Gerät, auf dem sich eine angepasste Linux-Version befindet. Der Prompt des\n            Gerätes zeigt ihnen den aktuellen Pfad nicht an. Sie müssen den aktuellen Pfad ermitteln.\n            Welches Kommando werden Sie eingeben?\n            <br />\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 47",
+        "@richtig": "ja",
+        "#text": "pwd"
+      }
+    },
+    {
+      "fragetitel": "Frage 48",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 48 im Buch.",
+      "fragetext": "Sie wollen ermitteln, welche Umgebungsvariablen in Ihrer aktuellen Sitzung gerade gültig sind. Mit\n            welchem Kommando können Sie diese Information abfragen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 48",
+          "@richtig": "nein",
+          "#text": "ls /var"
+        },
+        {
+          "@zuFrage": "Frage 48",
+          "@richtig": "nein",
+          "#text": "echo $var"
+        },
+        {
+          "@zuFrage": "Frage 48",
+          "@richtig": "ja",
+          "#text": "env"
+        },
+        {
+          "@zuFrage": "Frage 48",
+          "@richtig": "nein",
+          "#text": "set"
+        },
+        {
+          "@zuFrage": "Frage 48",
+          "@richtig": "nein",
+          "#text": "cat /proc/var"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 49",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 49 im Buch.",
+      "fragetext": "Sie wollen ermitteln, welche Shellvariablen in Ihrer aktuellen Shell gerade gültig sind. Mit welchem\n            Kommando können Sie diese Information abfragen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 49",
+          "@richtig": "nein",
+          "#text": "ls /var"
+        },
+        {
+          "@zuFrage": "Frage 49",
+          "@richtig": "nein",
+          "#text": "echo $var"
+        },
+        {
+          "@zuFrage": "Frage 49",
+          "@richtig": "nein",
+          "#text": "env"
+        },
+        {
+          "@zuFrage": "Frage 49",
+          "@richtig": "ja",
+          "#text": "set"
+        },
+        {
+          "@zuFrage": "Frage 49",
+          "@richtig": "nein",
+          "#text": "cat /proc/var"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 50",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 50 im Buch.",
+      "fragetext": "Sie müssen einem Server eine Shellvariable hinzufügen. Diese Variable soll für alle Benutzer in jeder\n            neu geöffneten Shell gültig sein, darf aber keine Neuanmeldung der Benutzer erfordern. In welcher der\n            folgenden Konfigurationsdateien können Sie die neue Variable eintragen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 50",
+          "@richtig": "ja",
+          "#text": "bashrc"
+        },
+        {
+          "@zuFrage": "Frage 50",
+          "@richtig": "nein",
+          "#text": ".profile"
+        },
+        {
+          "@zuFrage": "Frage 50",
+          "@richtig": "nein",
+          "#text": ".bashrc"
+        },
+        {
+          "@zuFrage": "Frage 50",
+          "@richtig": "nein",
+          "#text": ".bash_logout"
+        },
+        {
+          "@zuFrage": "Frage 50",
+          "@richtig": "nein",
+          "#text": ".bash_profile"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 51",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 51 im Buch.",
+      "fragetext": "Ein Benutzer hätte gerne einen Systemprompt, der sich von dem der anderen Benutzer unterscheidet. Er\n            würde die Konfiguration auch selbst vornehmen, weiß aber nicht welche Konfigurationsdatei er bearbeiten\n            muss.\n            Welche Konfigurationsdatei soll der Benutzer ändern?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 51",
+          "@richtig": "nein",
+          "#text": "/etc/bashrc"
+        },
+        {
+          "@zuFrage": "Frage 51",
+          "@richtig": "ja",
+          "#text": "~/.bashrc"
+        },
+        {
+          "@zuFrage": "Frage 51",
+          "@richtig": "nein",
+          "#text": "~/.bash_logout"
+        },
+        {
+          "@zuFrage": "Frage 51",
+          "@richtig": "nein",
+          "#text": "/etc/profile"
+        },
+        {
+          "@zuFrage": "Frage 51",
+          "@richtig": "nein",
+          "#text": "~/.bash_history"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 52",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 52 im Buch.",
+      "fragetext": "Sie wollen der Variablen meaning_of_life den Wert 42 zuordnen. Diese Zuordnung darf nur in der\n            aktuellen Shell und nicht in Subshells definiert sein.\n            Welche Kommandos können Sie verwenden? (Wählen Sie zwei Antworten aus!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 52",
+          "@richtig": "nein",
+          "#text": "export meaning_of_life"
+        },
+        {
+          "@zuFrage": "Frage 52",
+          "@richtig": "ja",
+          "#text": "meaning_of_life=42"
+        },
+        {
+          "@zuFrage": "Frage 52",
+          "@richtig": "nein",
+          "#text": "set meaning_of_life=42"
+        },
+        {
+          "@zuFrage": "Frage 52",
+          "@richtig": "ja",
+          "#text": "let meaning_of_life=42"
+        },
+        {
+          "@zuFrage": "Frage 52",
+          "@richtig": "nein",
+          "#text": "export meaning_of_life=42"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 53",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 53 im Buch.",
+      "fragetext": "Sie wollen den Errorlevel des zuletzt ausgeführten Programms ermitteln.\n            Welches der folgenden Kommandos gibt Ihnen den Errorlevel aus?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 53",
+          "@richtig": "nein",
+          "#text": "echo $PS1"
+        },
+        {
+          "@zuFrage": "Frage 53",
+          "@richtig": "nein",
+          "#text": "cat $?"
+        },
+        {
+          "@zuFrage": "Frage 53",
+          "@richtig": "nein",
+          "#text": "pwd"
+        },
+        {
+          "@zuFrage": "Frage 53",
+          "@richtig": "ja",
+          "#text": "echo $?"
+        },
+        {
+          "@zuFrage": "Frage 53",
+          "@richtig": "nein",
+          "#text": "echo $!"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 54",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 54 im Buch.",
+      "fragetext": "Mit welchem Kommando können Sie eine gesetzte Variable mit der Bezeichnung A wieder löschen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 54",
+          "@richtig": "nein",
+          "#text": "reset A"
+        },
+        {
+          "@zuFrage": "Frage 54",
+          "@richtig": "nein",
+          "#text": "A = 0"
+        },
+        {
+          "@zuFrage": "Frage 54",
+          "@richtig": "ja",
+          "#text": "unset A"
+        },
+        {
+          "@zuFrage": "Frage 54",
+          "@richtig": "nein",
+          "#text": "let A ="
+        },
+        {
+          "@zuFrage": "Frage 54",
+          "@richtig": "nein",
+          "#text": "export A"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 55",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 55 im Buch.",
+      "fragetext": "Für eine Programminstallation muss die Variable http_proxy eines Systems auf den Wert\n            http://192.168.0.1:3128 gesetzt werden. Geben Sie das Kommando ein, das die Variable setzt und gleich für\n            Subshells verfügbar macht!\n\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 55",
+        "@richtig": "ja",
+        "#text": "export http_proxy=http://192.168.0.1:3128"
+      }
+    },
+    {
+      "fragetitel": "Frage 56",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 56 im Buch.",
+      "fragetext": "Sie haben auf einem Terminal mehrere Kommandos eingegeben. Sie müssen die Eingabe der Kommandos noch\n            einmal prüfen.\n            Welchen Befehl können Sie eingeben, um eine Liste der zuletzt verwendeten Kommandos zu bekommen?\n            <br />\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 56",
+        "@richtig": "ja",
+        "#text": "history"
+      }
+    },
+    {
+      "fragetitel": "Frage 57",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 57 im Buch.",
+      "fragetext": "Um zu überprüfen, wie viele Benutzer, die sich in einem bestimmten Netzwerksegment befinden, auf\n            einen speziellen Serverdienst zugreifen, haben Sie folgendes Kommando verwendet:<br />\n            netstat -an|grep \"192.168.55\"|grep \":3128\"|wc -l<br />\n            Nach etwa einer halben Stunde müssen Sie dieselbe Prüfung noch einmal durchführen. Sie wollen aber nicht das\n            komplette Kommando noch einmal eingeben.\n            <br /> Welche Möglichkeiten stehen Ihnen zur Verfügung? (Wählen Sie drei Antworten aus!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 57",
+          "@richtig": "ja",
+          "#text": "Cursor „nach oben“ + Eingabetaste"
+        },
+        {
+          "@zuFrage": "Frage 57",
+          "@richtig": "nein",
+          "#text": "!?"
+        },
+        {
+          "@zuFrage": "Frage 57",
+          "@richtig": "ja",
+          "#text": "!!"
+        },
+        {
+          "@zuFrage": "Frage 57",
+          "@richtig": "ja",
+          "#text": "!net"
+        },
+        {
+          "@zuFrage": "Frage 57",
+          "@richtig": "nein",
+          "#text": "history"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 58",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 58 im Buch.",
+      "fragetext": "Sie haben mehrere Versionen desselben Programms auf einem Computer installiert. Sie müssen nun\n            ermitteln, welches dieser Programme startet, wenn Sie den entsprechenden Befehl ohne die Angabe eines Pfades\n            eingeben.\n            Welches Kommando wird ihnen ausschließlich diese Information liefern?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 58",
+          "@richtig": "ja",
+          "#text": "which"
+        },
+        {
+          "@zuFrage": "Frage 58",
+          "@richtig": "nein",
+          "#text": "whereis"
+        },
+        {
+          "@zuFrage": "Frage 58",
+          "@richtig": "nein",
+          "#text": "whois"
+        },
+        {
+          "@zuFrage": "Frage 58",
+          "@richtig": "nein",
+          "#text": "whatis"
+        },
+        {
+          "@zuFrage": "Frage 58",
+          "@richtig": "nein",
+          "#text": "apropos"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 59",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 59 im Buch.",
+      "fragetext": "Sie wollen sich über den Aufbau der Datei /etc/crontab informieren. Wenn Sie allerdings das Kommando\n            man crontab eingeben, erhalten Sie nur Informationen über das Programm crontab und nicht über die Datei. Wie\n            müssen Sie das Kommando anpassen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 59",
+          "@richtig": "nein",
+          "#text": "man 1 crontab"
+        },
+        {
+          "@zuFrage": "Frage 59",
+          "@richtig": "nein",
+          "#text": "whatis crontab"
+        },
+        {
+          "@zuFrage": "Frage 59",
+          "@richtig": "nein",
+          "#text": "which crontab"
+        },
+        {
+          "@zuFrage": "Frage 59",
+          "@richtig": "nein",
+          "#text": "man 8 crontab"
+        },
+        {
+          "@zuFrage": "Frage 59",
+          "@richtig": "ja",
+          "#text": "man 5 crontab"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 60",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 60 im Buch.",
+      "fragetext": "Sie wollen wissen, in welchen Verzeichnissen eines Computers sich die Manpages befinden. Mit welchem\n            Kommando können Sie diese Information am einfachsten bekommen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 60",
+          "@richtig": "nein",
+          "#text": "echo $MANPATH"
+        },
+        {
+          "@zuFrage": "Frage 60",
+          "@richtig": "ja",
+          "#text": "manpath"
+        },
+        {
+          "@zuFrage": "Frage 60",
+          "@richtig": "nein",
+          "#text": "manpath -c"
+        },
+        {
+          "@zuFrage": "Frage 60",
+          "@richtig": "nein",
+          "#text": "man man"
+        },
+        {
+          "@zuFrage": "Frage 60",
+          "@richtig": "nein",
+          "#text": "whereis man"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 61",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 61 im Buch.",
+      "fragetext": "Sie beabsichtigen zwei Textdateien, die jeweils Listen enthalten, in einer dritten Datei\n            zusammenzufassen. Die Namen der Dateien sind liste1 und liste2. Mit welchem Kommando können Sie die beiden\n            Dateien in liste3 überführen ohne in liste3 bereits vorhandene Daten zu überschreiben? Die beiden\n            ursprünglichen Listen sollen in der Zieldatei untereinander erscheinen!",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 61",
+          "@richtig": "nein",
+          "#text": "paste liste1 liste2 >> liste3"
+        },
+        {
+          "@zuFrage": "Frage 61",
+          "@richtig": "nein",
+          "#text": "join liste1 liste2 > liste3"
+        },
+        {
+          "@zuFrage": "Frage 61",
+          "@richtig": "nein",
+          "#text": "cat liste1 liste2 >liste3"
+        },
+        {
+          "@zuFrage": "Frage 61",
+          "@richtig": "nein",
+          "#text": "cat liste1 liste2 | liste3"
+        },
+        {
+          "@zuFrage": "Frage 61",
+          "@richtig": "ja",
+          "#text": "cat liste1 liste2 >> liste3"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 62",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 62 im Buch.",
+      "fragetext": "Um zu überprüfen, von welchen IP-Adressen aus auf einen Webserver zugegriffen wird, wollen Sie\n            zunächst aus der Datei access.log die erste Spalte (da befinden sich die Quelladressen) in eine neue Datei\n            überführen. Die neue Datei soll die Bezeichnung ip.txt tragen.\n            Welches Kommando können Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 62",
+          "@richtig": "nein",
+          "#text": "head -n 20 access.log"
+        },
+        {
+          "@zuFrage": "Frage 62",
+          "@richtig": "ja",
+          "#text": "cut -d \" \" -f1 access.log > ip.txt"
+        },
+        {
+          "@zuFrage": "Frage 62",
+          "@richtig": "nein",
+          "#text": "tail access.log > ip.txt"
+        },
+        {
+          "@zuFrage": "Frage 62",
+          "@richtig": "nein",
+          "#text": "od access.log >> ip.txt"
+        },
+        {
+          "@zuFrage": "Frage 62",
+          "@richtig": "nein",
+          "#text": "fmt access.log >> ip.txt"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 63",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 63 im Buch.",
+      "fragetext": "Sie müssen alle Tabstops einer Datei in eine entsprechende Anzahl Leerzeichen (spaces) umwandeln.\n            Welches Programm können Sie für die Umwandlung verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 63",
+          "@richtig": "ja",
+          "#text": "expand"
+        },
+        {
+          "@zuFrage": "Frage 63",
+          "@richtig": "nein",
+          "#text": "unexpand"
+        },
+        {
+          "@zuFrage": "Frage 63",
+          "@richtig": "nein",
+          "#text": "head"
+        },
+        {
+          "@zuFrage": "Frage 63",
+          "@richtig": "nein",
+          "#text": "pr"
+        },
+        {
+          "@zuFrage": "Frage 63",
+          "@richtig": "nein",
+          "#text": "cat"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 64",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 64 im Buch.",
+      "fragetext": "Sie wollen die Shebangzeilen mehrerer Skripten nacheinander betrachten, um sich einen schnellen\n            Überblick zu verschaffen, in welcher Umgebung diese Skripten ausgeführt werden müssen.\n            Welche Kommandos würden bei Übergabe des jeweiligen Dateinamen nur die erste Zeile einer Datei anzeigen?\n            (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 64",
+          "@richtig": "nein",
+          "#text": "head"
+        },
+        {
+          "@zuFrage": "Frage 64",
+          "@richtig": "nein",
+          "#text": "tail -1"
+        },
+        {
+          "@zuFrage": "Frage 64",
+          "@richtig": "ja",
+          "#text": "head -n1"
+        },
+        {
+          "@zuFrage": "Frage 64",
+          "@richtig": "ja",
+          "#text": "head -1"
+        },
+        {
+          "@zuFrage": "Frage 64",
+          "@richtig": "nein",
+          "#text": "tail -n1"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 65",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 65 im Buch.",
+      "fragetext": "Es liegt ihnen eine Logdatei eines Programms vor. Um die Analyse zu vereinfachen, wollen Sie die\n            Datei\n            umsortieren, so dass die neuesten Einträge, die momentan am Ende er Logdatei zu finden sind, anschließend\n            oben\n            in der Logdatei stehen.\n            Welches Programm würden Sie für diese Aufgabe verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 65",
+          "@richtig": "nein",
+          "#text": "expand"
+        },
+        {
+          "@zuFrage": "Frage 65",
+          "@richtig": "nein",
+          "#text": "tail"
+        },
+        {
+          "@zuFrage": "Frage 65",
+          "@richtig": "nein",
+          "#text": "cat"
+        },
+        {
+          "@zuFrage": "Frage 65",
+          "@richtig": "ja",
+          "#text": "tac"
+        },
+        {
+          "@zuFrage": "Frage 65",
+          "@richtig": "nein",
+          "#text": "head"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 66",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 66 im Buch.",
+      "fragetext": "Sie beabsichtigen, die Zeilen einer Textdatei zu nummerieren.\n            Welches Programm können Sie hierfür verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 66",
+          "@richtig": "nein",
+          "#text": "ln"
+        },
+        {
+          "@zuFrage": "Frage 66",
+          "@richtig": "nein",
+          "#text": "pr"
+        },
+        {
+          "@zuFrage": "Frage 66",
+          "@richtig": "ja",
+          "#text": "nl"
+        },
+        {
+          "@zuFrage": "Frage 66",
+          "@richtig": "nein",
+          "#text": "fmt"
+        },
+        {
+          "@zuFrage": "Frage 66",
+          "@richtig": "nein",
+          "#text": "wc"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 67",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 67 im Buch.",
+      "fragetext": "Sie wollen die letzten 40 Zeilen der Datei syslog ansehen. Sie haben bereits in das Verzeichnis\n            /var/log\n            gewechselt.\n            Welches Kommando werden Sie verwenden, um ausschließlich die letzten 40 Zeilen auf dem Bildschirm\n            auszugeben?\n            <br />\n\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 67",
+          "@richtig": "ja",
+          "#text": "tail -n 40 syslog"
+        },
+        {
+          "@zuFrage": "Frage 67",
+          "@richtig": "ja",
+          "#text": "tail -n40 syslog"
+        },
+        {
+          "@zuFrage": "Frage 67",
+          "@richtig": "ja",
+          "#text": "tail -40 syslog"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 68",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 68 im Buch.",
+      "fragetext": "Sie müssen alle Leerzeichen (spaces) einer Datei in eine entsprechende Anzahl Tabstops umwandeln.\n            Welches Programm können Sie für die Umwandlung verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 68",
+          "@richtig": "nein",
+          "#text": "expand"
+        },
+        {
+          "@zuFrage": "Frage 68",
+          "@richtig": "ja",
+          "#text": "unexpand"
+        },
+        {
+          "@zuFrage": "Frage 68",
+          "@richtig": "nein",
+          "#text": "head"
+        },
+        {
+          "@zuFrage": "Frage 68",
+          "@richtig": "nein",
+          "#text": "pr"
+        },
+        {
+          "@zuFrage": "Frage 68",
+          "@richtig": "nein",
+          "#text": "cat"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 69",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 69 im Buch.",
+      "fragetext": "Sie müssen eine Datei mit einer Größe von ca. 110 MB per E-Mail versenden. Der Provider des\n            Empfängers akzeptiert keine Nachrichten, die mehr als 10 Millionen Zeichen beinhalten. Sie müssen die Datei\n            teilen.\n            Welches Programm können Sie für die Aufteilung verwenden? (Geben Sie nur das Programm ohne Optionen und\n            Parameter an!)\n\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 69",
+        "@richtig": "ja",
+        "#text": "split"
+      }
+    },
+    {
+      "fragetitel": "Frage 70",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 70 im Buch.",
+      "fragetext": "Nachdem Sie die Zeilen einer Logdatei mittels sort sortiert haben, fällt ihnen auf, dass viele\n            Einträge in der Logdatei mehrfach vorhanden sind. Einige Einträge sind mehr als 50 mal vorhanden, was das\n            Lesen der Logdatei erheblich erschwert.\n            Welches Kommando (ohne Optionen und Parameter) können Sie verwenden, um die Duplikate zu entfernen?\n            <br />\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 70",
+        "@richtig": "ja",
+        "#text": "uniq"
+      }
+    },
+    {
+      "fragetitel": "Frage 71",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 71 im Buch.",
+      "fragetext": "Sie lassen sich in Ihrem Benutzerverzeichnis eine Dateiliste anzeigen, indem Sie das Kommando ls -l\n            verwenden. Da einige Dateien sehr groß sind, ist die Ausgabe unübersichtlich. Die Dateigrößen werden ohne\n            Tausendertrennzeichen in Byte angezeigt. Wie können Sie die Ausgabe in eine für Menschen gut lesbare Form\n            bringen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 71",
+          "@richtig": "nein",
+          "#text": "ls -li"
+        },
+        {
+          "@zuFrage": "Frage 71",
+          "@richtig": "nein",
+          "#text": "ls -la"
+        },
+        {
+          "@zuFrage": "Frage 71",
+          "@richtig": "ja",
+          "#text": "ls -lh"
+        },
+        {
+          "@zuFrage": "Frage 71",
+          "@richtig": "nein",
+          "#text": "ls -lc"
+        },
+        {
+          "@zuFrage": "Frage 71",
+          "@richtig": "nein",
+          "#text": "ls -lS"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 72",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 72 im Buch.",
+      "fragetext": "Mit welchen beiden der folgenden Kommandos können Sie von einer beliebigen Stelle des\n            Verzeichnisbaums in Ihr Heimatverzeichnis wechseln?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 72",
+          "@richtig": "ja",
+          "#text": "cd ~"
+        },
+        {
+          "@zuFrage": "Frage 72",
+          "@richtig": "nein",
+          "#text": "cd .."
+        },
+        {
+          "@zuFrage": "Frage 72",
+          "@richtig": "nein",
+          "#text": "cd /"
+        },
+        {
+          "@zuFrage": "Frage 72",
+          "@richtig": "ja",
+          "#text": "cd"
+        },
+        {
+          "@zuFrage": "Frage 72",
+          "@richtig": "nein",
+          "#text": "cd /home"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 73",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 73 im Buch.",
+      "fragetext": "Sie müssen eine größere Menge Dateien kopieren, die unterschiedlichen Benutzern gehören. Es muss\n            sichergestellt werden, dass die kopierten Dateien dieselben Berechtigungen erhalten wie die ursprünglichen\n            Dateien.\n            Welche Option sollten Sie für den cp Befehl verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 73",
+          "@richtig": "nein",
+          "#text": "-f"
+        },
+        {
+          "@zuFrage": "Frage 73",
+          "@richtig": "nein",
+          "#text": "-i"
+        },
+        {
+          "@zuFrage": "Frage 73",
+          "@richtig": "nein",
+          "#text": "-R"
+        },
+        {
+          "@zuFrage": "Frage 73",
+          "@richtig": "ja",
+          "#text": "-p"
+        },
+        {
+          "@zuFrage": "Frage 73",
+          "@richtig": "nein",
+          "#text": "-u"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 74",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 74 im Buch.",
+      "fragetext": "Sie müssen das Verzeichnis /daten/archiv/1980/bilder erstellen. Bisher ist nicht einmal das\n            Verzeichnis /daten vorhanden. Sie wollen das Verzeichnis mit einem einzigen Befehl erstellen.\n\n\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 74",
+          "@richtig": "ja",
+          "#text": "mkdir -p /daten/archiv/1980/bilder"
+        },
+        {
+          "@zuFrage": "Frage 74",
+          "@richtig": "ja",
+          "#text": "mkdir --parents /daten/archiv/1980/bilder"
+        },
+        {
+          "@zuFrage": "Frage 74",
+          "@richtig": "ja",
+          "#text": "mkdir /daten/archiv/1980/bilder -p"
+        },
+        {
+          "@zuFrage": "Frage 74",
+          "@richtig": "ja",
+          "#text": "mkdir /daten/archiv/1980/bilder --parents"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 75",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 75 im Buch.",
+      "fragetext": "Sie wollen alle pdf-Dateien, die ein User namens Willi in seinem Heimatverzeichnis abgespeichert hat,\n            finden. Es sollen keine Dokumente anderer Benutzer angezeigt werden.\n            Welches Kommando können Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 75",
+          "@richtig": "ja",
+          "#text": "find /home/willi -name *.pdf"
+        },
+        {
+          "@zuFrage": "Frage 75",
+          "@richtig": "nein",
+          "#text": "find /home/willi *.pdf"
+        },
+        {
+          "@zuFrage": "Frage 75",
+          "@richtig": "nein",
+          "#text": "locate *.pdf"
+        },
+        {
+          "@zuFrage": "Frage 75",
+          "@richtig": "nein",
+          "#text": "search /home/willi *.pdf"
+        },
+        {
+          "@zuFrage": "Frage 75",
+          "@richtig": "nein",
+          "#text": "find /home/willi -name ?.pdf"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 76",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 76 im Buch.",
+      "fragetext": "Ein Kollege hat Ihnen eine Datei mit dem Namen programm.tar.gz per E-Mail geschickt. Sie müssen die\n            Datei auspacken, um das enthaltene Programm ausführen zu können.\n            Welches Kommando werden Sie ausführen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 76",
+          "@richtig": "nein",
+          "#text": "tar -xvfz programm.tar.gz"
+        },
+        {
+          "@zuFrage": "Frage 76",
+          "@richtig": "nein",
+          "#text": "tar -t programm.tar.gz"
+        },
+        {
+          "@zuFrage": "Frage 76",
+          "@richtig": "nein",
+          "#text": "tar --list programm.tar.gz"
+        },
+        {
+          "@zuFrage": "Frage 76",
+          "@richtig": "nein",
+          "#text": "rmp -ihv programm.tar.gz"
+        },
+        {
+          "@zuFrage": "Frage 76",
+          "@richtig": "ja",
+          "#text": "tar -xvzf programm.tar.gz"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 77",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 77 im Buch.",
+      "fragetext": "Sie wollen eine bestimmte Datei aus einem Backup wiederherstellen. Weil Sie nicht wissen, in welchem\n            Archiv sich die fragliche Datei befindet, wollen Sie zunächst nur den Inhalt der Archive einsehen.\n            Welche beiden Kommandos können Sie hier verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 77",
+          "@richtig": "nein",
+          "#text": "tar -xvfz"
+        },
+        {
+          "@zuFrage": "Frage 77",
+          "@richtig": "ja",
+          "#text": "tar -t"
+        },
+        {
+          "@zuFrage": "Frage 77",
+          "@richtig": "nein",
+          "#text": "tar -r"
+        },
+        {
+          "@zuFrage": "Frage 77",
+          "@richtig": "nein",
+          "#text": "tar -c"
+        },
+        {
+          "@zuFrage": "Frage 77",
+          "@richtig": "ja",
+          "#text": "tar --list"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 78",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 78 im Buch.",
+      "fragetext": "Sie müssen eine Datei mit der Bezeichnung files.gz dekomprimieren.\n            Welche beiden Kommandos können Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 78",
+          "@richtig": "ja",
+          "#text": "gzip -d files.gz"
+        },
+        {
+          "@zuFrage": "Frage 78",
+          "@richtig": "nein",
+          "#text": "gzip -t files.gz"
+        },
+        {
+          "@zuFrage": "Frage 78",
+          "@richtig": "nein",
+          "#text": "gzip -u files.gz"
+        },
+        {
+          "@zuFrage": "Frage 78",
+          "@richtig": "nein",
+          "#text": "gzip files.gz"
+        },
+        {
+          "@zuFrage": "Frage 78",
+          "@richtig": "ja",
+          "#text": "gunzip files.gz"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 79",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 79 im Buch.",
+      "fragetext": "Sie müssen eine Datei mit der Bezeichnung files.bz2 dekomprimieren. Geben Sie ein geeignetes Programm\n            (ohne Optionen oder Parameter) an, das diese Aufgabe erfüllt.\n\n\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 79",
+          "@richtig": "ja",
+          "#text": "bzip2"
+        },
+        {
+          "@zuFrage": "Frage 79",
+          "@richtig": "ja",
+          "#text": "bunzip2"
+        },
+        {
+          "@zuFrage": "Frage 79",
+          "@richtig": "ja",
+          "#text": "bzcat"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 80",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 80 im Buch.",
+      "fragetext": "Sie müssen auf einem System alle pdf-Dokumente finden, die sich in Benutzerverzeichnissen befinden\n            und diese in einer Verzeichnisstruktur unterhalb von /pdfbackup sichern.\n            Welches der folgenden Kommandos wir diese Aufgabe erfüllen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 80",
+          "@richtig": "nein",
+          "#text": "tar -cf /pdfbackup/pdfs.tar /home/*"
+        },
+        {
+          "@zuFrage": "Frage 80",
+          "@richtig": "ja",
+          "#text": "find /home -name *.pdf | cpio -pd /pdfbackup"
+        },
+        {
+          "@zuFrage": "Frage 80",
+          "@richtig": "nein",
+          "#text": "find /home -name *.pdf | cpio -o /pdfbackup"
+        },
+        {
+          "@zuFrage": "Frage 80",
+          "@richtig": "nein",
+          "#text": "find /home -file *.pdf | cpio -pd /pdfbackup"
+        },
+        {
+          "@zuFrage": "Frage 80",
+          "@richtig": "nein",
+          "#text": "cp /home/*.pdf /pdfbackup"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 81",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 81 im Buch.",
+      "fragetext": "Sie müssen den kompletten Inhalt einer Festplatte inklusive MBR auf eine andere Festplatte sichern.\n            Die Quellfestplatte ist am primären IDE-Controller als Master angeschlossen. Die Zielfestplatte ist am\n            sekundären IDE-Controller als Slave des CD-Rom angeschlossen.\n            Welches Kommando werden Sie eingeben? (Verwenden Sie keine Optionen, die nicht unbedingt erforderlich sind!)\n\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 81",
+        "@richtig": "ja",
+        "#text": "dd if=/dev/hda of=/dev/hdd"
+      }
+    },
+    {
+      "fragetitel": "Frage 82",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 82 im Buch.",
+      "fragetext": "Sie müssen den Masterbootrecord (MBR) einer Festplatte sichern. Die Festplatte ist als Master am\n            primären IDE-Kanal eines Computers angeschlossen.\n            Welches der folgenden Kommandos können Sie verwenden, wenn die Sicherungsdatei mbr.backup sein soll?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 82",
+          "@richtig": "ja",
+          "#text": "dd if=/dev/hda of=mbr.backup ibs=512 count=1"
+        },
+        {
+          "@zuFrage": "Frage 82",
+          "@richtig": "nein",
+          "#text": "dd of=/dev/hda if=mbr.backup ibs=512 count=1"
+        },
+        {
+          "@zuFrage": "Frage 82",
+          "@richtig": "nein",
+          "#text": "dd if=/dev/hda of=mbr.backup"
+        },
+        {
+          "@zuFrage": "Frage 82",
+          "@richtig": "nein",
+          "#text": "dump /dev/hda"
+        },
+        {
+          "@zuFrage": "Frage 82",
+          "@richtig": "nein",
+          "#text": "dd if=/dev/hdb of=mbr.backup ibs=512 count=1"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 83",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 83 im Buch.",
+      "fragetext": "Sie finden auf Ihrem System eine Datei mit dem Namen doku.ods. Sie erinnern sich leider nicht mehr,\n            mit welchem Programm Sie diese Datei erstellt haben. Sie wollen herausfinden, um was für einen Dateitypen es\n            sich hier handelt.\n            Welches Kommando können Sie hierfür verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 83",
+          "@richtig": "nein",
+          "#text": "touch doku.ods"
+        },
+        {
+          "@zuFrage": "Frage 83",
+          "@richtig": "nein",
+          "#text": "stat doku.ods"
+        },
+        {
+          "@zuFrage": "Frage 83",
+          "@richtig": "ja",
+          "#text": "file doku.ods"
+        },
+        {
+          "@zuFrage": "Frage 83",
+          "@richtig": "nein",
+          "#text": "rm doku.ods"
+        },
+        {
+          "@zuFrage": "Frage 83",
+          "@richtig": "nein",
+          "#text": "stat -f doku.ods"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 84",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 84 im Buch.",
+      "fragetext": "Sie haben die Ausgabe des Kommandos netsat -an in eine Datei mit dem Namen ports.txt umgeleitet. Sie\n            wollen diesen Vorgang nun wiederholen und die neuerliche Ausgabe an die bereits vorhandene Textdatei\n            anhängen. Wie muss das Kommando ausgeführt werden, damit die alte Aufzeichnung nicht überschrieben wird?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 84",
+          "@richtig": "nein",
+          "#text": "netstat -an > ports.txt"
+        },
+        {
+          "@zuFrage": "Frage 84",
+          "@richtig": "nein",
+          "#text": "netstat -an | ports.txt"
+        },
+        {
+          "@zuFrage": "Frage 84",
+          "@richtig": "nein",
+          "#text": "netstat -an > ports2.txt"
+        },
+        {
+          "@zuFrage": "Frage 84",
+          "@richtig": "nein",
+          "#text": "netstat -an ||ports.txt"
+        },
+        {
+          "@zuFrage": "Frage 84",
+          "@richtig": "ja",
+          "#text": "netstat -an >> ports.txt"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 85",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 85 im Buch.",
+      "fragetext": "Sie müssen die Ausgabe eines Programms in eine Textdatei umleiten. Hierbei sollen sowohl die normalen\n            Meldungen als auch Fehlermeldungen erfasst werden.\n            Welche Optionen werden Sie an die Ausführung des Programms anhängen, wenn es die benötigte Textdatei noch\n            nicht gibt? Wählen Sie die kürzest mögliche Option!",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 85",
+          "@richtig": "nein",
+          "#text": ">> textdatei 2>&1"
+        },
+        {
+          "@zuFrage": "Frage 85",
+          "@richtig": "nein",
+          "#text": "> textdatei 1>&2"
+        },
+        {
+          "@zuFrage": "Frage 85",
+          "@richtig": "nein",
+          "#text": ">> textdatei 1>&2"
+        },
+        {
+          "@zuFrage": "Frage 85",
+          "@richtig": "ja",
+          "#text": "> textdatei 2>&1"
+        },
+        {
+          "@zuFrage": "Frage 85",
+          "@richtig": "nein",
+          "#text": "> textdatei 2>/1"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 86",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 86 im Buch.",
+      "fragetext": "Sie wollen den Inhalt einer Datei per E-Mail an die Adresse exp@example.net versenden. Mit welchen\n            Kommandos können Sie diese Aufgabe vom Terminal aus lösen? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 86",
+          "@richtig": "nein",
+          "#text": "cat datei > mail -s \"eine Datei\" exp@example.net"
+        },
+        {
+          "@zuFrage": "Frage 86",
+          "@richtig": "ja",
+          "#text": "cat datei | mail -s \"eine Datei\" exp@example.net"
+        },
+        {
+          "@zuFrage": "Frage 86",
+          "@richtig": "ja",
+          "#text": "mail -s \"eine Datei\" exp@example.net < datei"
+        },
+        {
+          "@zuFrage": "Frage 86",
+          "@richtig": "nein",
+          "#text": "mail -s \"eine Datei\" exp@example.net > datei"
+        },
+        {
+          "@zuFrage": "Frage 86",
+          "@richtig": "nein",
+          "#text": "sendmail -s \"eine Datei\" exp@example.net < datei"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 87",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 87 im Buch.",
+      "fragetext": "Sie durchsuchen die Datei /var/log/messages nach dhcp-Meldungen, indem Sie das Kommando grep dhcp\n            /var/log/messages verwenden. Sie wollen das Kommando wiederholen, aber diesmal soll die Ausgabe des\n            Kommandos sowohl auf dem Bildschirm erscheinen als auch in einer Textdatei abgespeichert werden. Wie werden\n            Sie den Befehl vervollständigen?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 87",
+          "@richtig": "ja",
+          "#text": "grep dhcp /var/log/messages | tee dhcpmessages"
+        },
+        {
+          "@zuFrage": "Frage 87",
+          "@richtig": "nein",
+          "#text": "grep dhcp /var/log/messages > tee dhcpmessages"
+        },
+        {
+          "@zuFrage": "Frage 87",
+          "@richtig": "nein",
+          "#text": "grep dhcp /var/log/messages < tee dhcpmessages"
+        },
+        {
+          "@zuFrage": "Frage 87",
+          "@richtig": "nein",
+          "#text": "tee grep dhcp /var/log/messages"
+        },
+        {
+          "@zuFrage": "Frage 87",
+          "@richtig": "nein",
+          "#text": "tee | grep dhcp /var/log/messages"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 88",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 88 im Buch.",
+      "fragetext": "Sie führen mithilfe eines Skripts eine Abfrage aus. Das Ergebnis der Abfrage umfasst mehrere Zeile.\n            Sie müssen jede einzelne Zeile der Antwort an ein anderes Programm zur Auswertung übergeben. Leider kann\n            dieses Programm immer nur eine Zeile gleichzeitig verarbeiten. Sie müssen ein Tool zwischenschalten, das die\n            Antwortzeilen des Skriptes einzeln an das Programm übergibt.\n            Welches Werkzeug können Sie hier einsetzen?\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 88",
+        "@richtig": "ja",
+        "#text": "xargs"
+      }
+    },
+    {
+      "fragetitel": "Frage 89",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 89 im Buch.",
+      "fragetext": "Sie müssen einen Prozess beenden, der nicht mehr reagiert. Sie wollen das Kommando kill einsetzen,\n            kennen aber nicht die Prozess-ID des zu beendenden Prozesses.\n            Welche der folgenden Programme können Sie verwenden, um die PID zu ermitteln? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 89",
+          "@richtig": "ja",
+          "#text": "ps"
+        },
+        {
+          "@zuFrage": "Frage 89",
+          "@richtig": "nein",
+          "#text": "free"
+        },
+        {
+          "@zuFrage": "Frage 89",
+          "@richtig": "ja",
+          "#text": "top"
+        },
+        {
+          "@zuFrage": "Frage 89",
+          "@richtig": "nein",
+          "#text": "df"
+        },
+        {
+          "@zuFrage": "Frage 89",
+          "@richtig": "nein",
+          "#text": "jobs"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 90",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 90 im Buch.",
+      "fragetext": "Sie benötigen eine grafische Darstellung der Prozesse eines laufenden Systems. In dieser Darstellung\n            sollten zusätzlich auch die PIDs angezeigt werden.\n            Welches Kommando werden Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 90",
+          "@richtig": "nein",
+          "#text": "pstree -a"
+        },
+        {
+          "@zuFrage": "Frage 90",
+          "@richtig": "nein",
+          "#text": "ps -aux"
+        },
+        {
+          "@zuFrage": "Frage 90",
+          "@richtig": "nein",
+          "#text": "top"
+        },
+        {
+          "@zuFrage": "Frage 90",
+          "@richtig": "nein",
+          "#text": "uptime"
+        },
+        {
+          "@zuFrage": "Frage 90",
+          "@richtig": "ja",
+          "#text": "pstree -p"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 91",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 91 im Buch.",
+      "fragetext": "Welche der folgenden Programme können Sie verwenden, wenn Sie einen laufenden Prozess beenden wollen?\n            (Wählen Sie drei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 91",
+          "@richtig": "nein",
+          "#text": "jobs"
+        },
+        {
+          "@zuFrage": "Frage 91",
+          "@richtig": "ja",
+          "#text": "kill"
+        },
+        {
+          "@zuFrage": "Frage 91",
+          "@richtig": "nein",
+          "#text": "bg"
+        },
+        {
+          "@zuFrage": "Frage 91",
+          "@richtig": "ja",
+          "#text": "killall"
+        },
+        {
+          "@zuFrage": "Frage 91",
+          "@richtig": "ja",
+          "#text": "top"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 92",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 92 im Buch.",
+      "fragetext": "Sie haben versucht die Anwendung mc durch Eingabe des Kommandos killall mc zu beenden. Die Anwendung\n            reagiert jedoch nicht auf diesen Befehl. Durch Eingabe des Kommandos ps aux haben Sie ermittelt, dass der\n            Prozess die PID 18456 verwendet.\n            Welche Befehle sind geeignet, den nicht mehr reagierenden Prozess zu beenden? (Wählen Sie drei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 92",
+          "@richtig": "ja",
+          "#text": "killall -9 mc"
+        },
+        {
+          "@zuFrage": "Frage 92",
+          "@richtig": "ja",
+          "#text": "kill -s 9 18456"
+        },
+        {
+          "@zuFrage": "Frage 92",
+          "@richtig": "nein",
+          "#text": "kill -SIGHUP 18456"
+        },
+        {
+          "@zuFrage": "Frage 92",
+          "@richtig": "nein",
+          "#text": "kill -sigterm 18456"
+        },
+        {
+          "@zuFrage": "Frage 92",
+          "@richtig": "ja",
+          "#text": "kill -SIGKILL 18456"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 93",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 93 im Buch.",
+      "fragetext": "Sie sind via ssh mit einem Server verbunden und beabsichtigen die Ausführung eines Programms, dessen\n            Ablauf mehrere Stunden in Anspruch nehmen kann. Das Programm soll deshalb weiterlaufen, auch wenn Sie die\n            ssh-Verbindung trennen.\n            Welchen Befehl können Sie der Ausführung des Programms voranstellen, um diese Aufgabe zu lösen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 93",
+          "@richtig": "nein",
+          "#text": "bg"
+        },
+        {
+          "@zuFrage": "Frage 93",
+          "@richtig": "ja",
+          "#text": "nohup"
+        },
+        {
+          "@zuFrage": "Frage 93",
+          "@richtig": "nein",
+          "#text": "jobs"
+        },
+        {
+          "@zuFrage": "Frage 93",
+          "@richtig": "nein",
+          "#text": "fg"
+        },
+        {
+          "@zuFrage": "Frage 93",
+          "@richtig": "nein",
+          "#text": "tee"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 94",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 94 im Buch.",
+      "fragetext": "Sie müssen ermitteln, wann das System, an dem Sie gerade arbeiten, zuletzt neu gestartet wurde.\n            Welches Programm zeigt ihnen an, wie lange das System bereits läuft, ohne zusätzliche, nicht benötigte\n            Informationen auszugeben?\n            <br />\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 94",
+        "@richtig": "ja",
+        "#text": "uptime"
+      }
+    },
+    {
+      "fragetitel": "Frage 95",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 95 im Buch.",
+      "fragetext": "Sie müssen ermitteln, wie viel Arbeitsspeicher in einem System noch verfügbar ist und wie viel\n            belegt.\n            Welches Kommando können Sie verwenden, um eine entsprechende Information in Megabyte zu erhalten?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 95",
+          "@richtig": "nein",
+          "#text": "free -h"
+        },
+        {
+          "@zuFrage": "Frage 95",
+          "@richtig": "nein",
+          "#text": "df -h"
+        },
+        {
+          "@zuFrage": "Frage 95",
+          "@richtig": "ja",
+          "#text": "free -m"
+        },
+        {
+          "@zuFrage": "Frage 95",
+          "@richtig": "nein",
+          "#text": "df -m"
+        },
+        {
+          "@zuFrage": "Frage 95",
+          "@richtig": "nein",
+          "#text": "mem"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 96",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 96 im Buch.",
+      "fragetext": "Sie wollen in einer ssh-Sitzung ein Programm, dessen Ausführung lange Zeit in Anspruch nimmt, in den\n            Hintergrund schicken, damit Sie die Konsole anderweitig verwenden können. Das Programm soll seine Arbeit im\n            Hintergrund fortsetzen. Was tun Sie?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 96",
+          "@richtig": "nein",
+          "#text": "Strg+C"
+        },
+        {
+          "@zuFrage": "Frage 96",
+          "@richtig": "nein",
+          "#text": "Strg+Z anschließend jobs"
+        },
+        {
+          "@zuFrage": "Frage 96",
+          "@richtig": "nein",
+          "#text": "Strg+Z anschließend fg"
+        },
+        {
+          "@zuFrage": "Frage 96",
+          "@richtig": "ja",
+          "#text": "Strg+Z anschließend bg"
+        },
+        {
+          "@zuFrage": "Frage 96",
+          "@richtig": "nein",
+          "#text": "Strg+Z"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 97",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 97 im Buch.",
+      "fragetext": "Sie verwenden das Kommando jobs und erhalten folgende Ausgabe:<br />\n            harald@archangel:~$ jobs<br />\n            [1]- Angehalten lynx<br />\n            [2] Angehalten dd if=/dev/hda of=/dev/hdb<br />\n            [3]+ Angehalten wget http://www.kernel.org<br />\n            Welches Kommando können Sie verwenden, damit die Duplizierung der Festplatte im Hintergrund fortgesetzt\n            wird?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 97",
+          "@richtig": "nein",
+          "#text": "fg 2"
+        },
+        {
+          "@zuFrage": "Frage 97",
+          "@richtig": "nein",
+          "#text": "jobs"
+        },
+        {
+          "@zuFrage": "Frage 97",
+          "@richtig": "nein",
+          "#text": "bg 3"
+        },
+        {
+          "@zuFrage": "Frage 97",
+          "@richtig": "ja",
+          "#text": "bg 2"
+        },
+        {
+          "@zuFrage": "Frage 97",
+          "@richtig": "nein",
+          "#text": "fg"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 98",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 98 im Buch.",
+      "fragetext": "Sie planen apt-get upgrade auszuführen, um ihr System auf den neuesten Stand zu bringen. Da dieses\n            Kommando erfahrungsgemäß eine hohe Systemlast verursacht, wollen Sie ihm eine geringere Prozesspriorität\n            zuweisen.\n            Welchen Befehl werden Sie apt-get voranstellen, damit andere Prozesse durch die Aktualisierung nicht negativ\n            beeinflusst werden? (Wählen Sie zwei Antwortmöglichkeiten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 98",
+          "@richtig": "ja",
+          "#text": "nice -14"
+        },
+        {
+          "@zuFrage": "Frage 98",
+          "@richtig": "ja",
+          "#text": "nice -n 14"
+        },
+        {
+          "@zuFrage": "Frage 98",
+          "@richtig": "nein",
+          "#text": "renice -n 14"
+        },
+        {
+          "@zuFrage": "Frage 98",
+          "@richtig": "nein",
+          "#text": "nice -n -14"
+        },
+        {
+          "@zuFrage": "Frage 98",
+          "@richtig": "nein",
+          "#text": "nice --14"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 99",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 99 im Buch.",
+      "fragetext": "Sie stellen fest, dass das System an dem Sie arbeiten sehr träge reagiert. Eine Überprüfung ergibt,\n            dass ein Backupskript einen großen Teil der Systemressourcen verbraucht. Die zugehörige Prozess ID ist 8490.\n            Welches Kommando können Sie verwenden, um die Ausführungspriorität der Datensicherung im laufenden Betrieb\n            zu senken?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 99",
+          "@richtig": "nein",
+          "#text": "nice --12 8490"
+        },
+        {
+          "@zuFrage": "Frage 99",
+          "@richtig": "nein",
+          "#text": "bg"
+        },
+        {
+          "@zuFrage": "Frage 99",
+          "@richtig": "nein",
+          "#text": "renice -n 15 8490"
+        },
+        {
+          "@zuFrage": "Frage 99",
+          "@richtig": "ja",
+          "#text": "renice -15 8490"
+        },
+        {
+          "@zuFrage": "Frage 99",
+          "@richtig": "nein",
+          "#text": "nice -n 12 8490"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 100",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 100 im Buch.",
+      "fragetext": "Welche der folgenden Programme können Einfluss auf die Ausführungspriorität eines Prozesses nehmen?\n            (Wählen Sie drei Programme aus!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 100",
+          "@richtig": "nein",
+          "#text": "bg"
+        },
+        {
+          "@zuFrage": "Frage 100",
+          "@richtig": "ja",
+          "#text": "nice"
+        },
+        {
+          "@zuFrage": "Frage 100",
+          "@richtig": "ja",
+          "#text": "renice"
+        },
+        {
+          "@zuFrage": "Frage 100",
+          "@richtig": "nein",
+          "#text": "fg"
+        },
+        {
+          "@zuFrage": "Frage 100",
+          "@richtig": "ja",
+          "#text": "top"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 101",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 101 im Buch.",
+      "fragetext": "Sie müssen aus einer Protokolldatei alle Leerzeilen entfernen und das Ergebnis in einer neuen\n            Textdatei abspeichern.\n            Welche beiden der folgenden Kommandos erfüllen diesen Zweck?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 101",
+          "@richtig": "nein",
+          "#text": "grep ^$ logdatei > textdatei.txt"
+        },
+        {
+          "@zuFrage": "Frage 101",
+          "@richtig": "nein",
+          "#text": "cat logdatei |grep ^$ > textdatei.txt"
+        },
+        {
+          "@zuFrage": "Frage 101",
+          "@richtig": "nein",
+          "#text": "grep -v ^[#] logdatei > textdatei.txt"
+        },
+        {
+          "@zuFrage": "Frage 101",
+          "@richtig": "ja",
+          "#text": "grep -v ^$ logdatei > textdatei.txt"
+        },
+        {
+          "@zuFrage": "Frage 101",
+          "@richtig": "ja",
+          "#text": "cat logdatei |grep -v ^$ > textdatei.txt"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 102",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 102 im Buch.",
+      "fragetext": "Sie analysieren die Katalogdatei eines Backups. In dieser Datei müssen Sie alle Einträge finden, die\n            den Pfad /home/meier/Dokumente enthalten. Wie beginnen Sie das Suchkommando? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 102",
+          "@richtig": "ja",
+          "#text": "grep \"/home/meier/Dokumente\""
+        },
+        {
+          "@zuFrage": "Frage 102",
+          "@richtig": "nein",
+          "#text": "find \\/home\\/meier\\/Dokumente"
+        },
+        {
+          "@zuFrage": "Frage 102",
+          "@richtig": "nein",
+          "#text": "grep //home//meier//Dokumente"
+        },
+        {
+          "@zuFrage": "Frage 102",
+          "@richtig": "nein",
+          "#text": "grep /home/meier/Dokumente"
+        },
+        {
+          "@zuFrage": "Frage 102",
+          "@richtig": "ja",
+          "#text": "grep \\/home\\/meier\\/Dokumente"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 103",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 103 im Buch.",
+      "fragetext": "\"Sie müssen in einem Textfile alle Zeilen auffinden, in denen die Zeichenkette Galileocomputing\n            vorkommt. Es sollen auch die Zeilen gefunden werden, in denen die Zeichenkette mit einem kleinen \"g\"\n            beginnt. Wie beginnen Sie das Kommando?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 103",
+          "@richtig": "nein",
+          "#text": "grep -v [g]alileocomputing"
+        },
+        {
+          "@zuFrage": "Frage 103",
+          "@richtig": "nein",
+          "#text": "grep ?alileocomputing"
+        },
+        {
+          "@zuFrage": "Frage 103",
+          "@richtig": "nein",
+          "#text": "grep *alileocomputing"
+        },
+        {
+          "@zuFrage": "Frage 103",
+          "@richtig": "nein",
+          "#text": "grep -v [Gg]alileocomputing"
+        },
+        {
+          "@zuFrage": "Frage 103",
+          "@richtig": "ja",
+          "#text": "grep [Gg]alileocomputing"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 104",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 104 im Buch.",
+      "fragetext": "Sie bearbeiten eine Konfigurationsdatei mit dem Editor vi. Da Sie alle gewünschten Änderungen\n            vorgenommen haben, wollen Sie die Datei nun speichern und schließen. Sie haben bereits durch betätigen der\n            Esc-Taste in den Kommandomodus gewechselt. Welche Tastaturkommandos schließen den Editor und speichern die\n            Änderungen in der Datei? (Wählen Sie drei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 104",
+          "@richtig": "ja",
+          "#text": ":x"
+        },
+        {
+          "@zuFrage": "Frage 104",
+          "@richtig": "nein",
+          "#text": ":q!"
+        },
+        {
+          "@zuFrage": "Frage 104",
+          "@richtig": "ja",
+          "#text": ":wq"
+        },
+        {
+          "@zuFrage": "Frage 104",
+          "@richtig": "nein",
+          "#text": ":w"
+        },
+        {
+          "@zuFrage": "Frage 104",
+          "@richtig": "ja",
+          "#text": "ZZ"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 105",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 105 im Buch.",
+      "fragetext": "Sie müssen in einer Konfigurationsdatei einige Zeilen löschen. Damit es schnell geht, wollen Sie\n            nicht jedes Mal sicherstellen, dass sich der Cursor am Anfang der Zeile befindet.\n            Welches Tastaturkommando löscht eine komplette Textzeile unabhängig von der Cursorposition, wenn Sie den vi\n            als Editor verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 105",
+          "@richtig": "nein",
+          "#text": "p"
+        },
+        {
+          "@zuFrage": "Frage 105",
+          "@richtig": "nein",
+          "#text": "P"
+        },
+        {
+          "@zuFrage": "Frage 105",
+          "@richtig": "ja",
+          "#text": "dd"
+        },
+        {
+          "@zuFrage": "Frage 105",
+          "@richtig": "nein",
+          "#text": "D"
+        },
+        {
+          "@zuFrage": "Frage 105",
+          "@richtig": "nein",
+          "#text": "yy"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 106",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 106 im Buch.",
+      "fragetext": "Sie müssen eine Datei mit dem Editor vi bearbeiten. Damit Sie die Textposition nicht erst suchen\n            müssen, wollen Sie ein Befehlszeilenoption verwenden, so dass der Cursor direkt in Zeile 87 steht, wenn Sie\n            den Editor gestartet haben.\n            Welches Kommando geben Sie ein?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 106",
+          "@richtig": "ja",
+          "#text": "vi +87 datei"
+        },
+        {
+          "@zuFrage": "Frage 106",
+          "@richtig": "nein",
+          "#text": "vi 87 datei"
+        },
+        {
+          "@zuFrage": "Frage 106",
+          "@richtig": "nein",
+          "#text": "vi -87 datei"
+        },
+        {
+          "@zuFrage": "Frage 106",
+          "@richtig": "nein",
+          "#text": "eine solche Option gibt es nicht."
+        },
+        {
+          "@zuFrage": "Frage 106",
+          "@richtig": "nein",
+          "#text": "vi +/87 datei"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 107",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 107 im Buch.",
+      "fragetext": "Sie beabsichtigen das Dateisystem des Datenträgers /dev/sdb1 von ext2 nach ext3 zu aktualisieren. Die\n            Daten wurden bereits gesichert, aber Sie wollen dennoch eine Konvertierung ohne Datenverlust durchführen.\n            Welches Kommando können Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 107",
+          "@richtig": "nein",
+          "#text": "mkfs -t ext3 /dev/sdb1"
+        },
+        {
+          "@zuFrage": "Frage 107",
+          "@richtig": "ja",
+          "#text": "tune2fs -j /dev/sdb1"
+        },
+        {
+          "@zuFrage": "Frage 107",
+          "@richtig": "nein",
+          "#text": "mkfs -t ext2 -j /dev/sdb1"
+        },
+        {
+          "@zuFrage": "Frage 107",
+          "@richtig": "nein",
+          "#text": "mkfs.ext3 /dev/sdb1"
+        },
+        {
+          "@zuFrage": "Frage 107",
+          "@richtig": "nein",
+          "#text": "fdisk /dev/sdb1"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 108",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 108 im Buch.",
+      "fragetext": "Sie müssen zu Wartungszwecken alle vorhandenen Swappartitionen eines Systems deaktivieren.\n            Welches Kommando (ggf. mit Optionen) werden Sie am Terminal eingeben?\n            <br />\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 108",
+        "@richtig": "ja",
+        "#text": "swapoff -a"
+      }
+    },
+    {
+      "fragetitel": "Frage 109",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 109 im Buch.",
+      "fragetext": "Sie stellen fest, dass die Festplatte eines Systems, an dem unterschiedliche Benutzer arbeiten,\n            annähernd voll ist. Sie wollen ermitteln, welcher Benutzer besonders große Datenmengen in seinem\n            Heimatverzeichnis vorhält.\n            Welches Kommando können Sie hierfür verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 109",
+          "@richtig": "nein",
+          "#text": "df"
+        },
+        {
+          "@zuFrage": "Frage 109",
+          "@richtig": "ja",
+          "#text": "du"
+        },
+        {
+          "@zuFrage": "Frage 109",
+          "@richtig": "nein",
+          "#text": "free"
+        },
+        {
+          "@zuFrage": "Frage 109",
+          "@richtig": "nein",
+          "#text": "ps"
+        },
+        {
+          "@zuFrage": "Frage 109",
+          "@richtig": "nein",
+          "#text": "ls"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 110",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 110 im Buch.",
+      "fragetext": "Sie wollen, dass alle momentan nicht gemounteten Dateisysteme, die in der Datei /etc/fstab gelistet\n            sind, automatisch eingehängt werden.\n            Welches Kommando (ggf. mit Optionen) werden Sie verwenden?\n            <br />\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 110",
+        "@richtig": "ja",
+        "#text": "mount -a"
+      }
+    },
+    {
+      "fragetitel": "Frage 111",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 111 im Buch.",
+      "fragetext": "Sie haben ein System von einem Kollegen übernommen und wollen sich nun ansehen, welche Dateisysteme\n            aktuell eingehängt sind. Wo können Sie das nachsehen? (Wählen Sie drei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 111",
+          "@richtig": "ja",
+          "#text": "/etc/mtab"
+        },
+        {
+          "@zuFrage": "Frage 111",
+          "@richtig": "ja",
+          "#text": "/proc/mounts"
+        },
+        {
+          "@zuFrage": "Frage 111",
+          "@richtig": "nein",
+          "#text": "/etc/fstab"
+        },
+        {
+          "@zuFrage": "Frage 111",
+          "@richtig": "ja",
+          "#text": "durch Eingabe von mount"
+        },
+        {
+          "@zuFrage": "Frage 111",
+          "@richtig": "nein",
+          "#text": "durch Eingabe von du"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 112",
+      "fragetyp": "text",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 112 im Buch.",
+      "fragetext": "Sie müssen das Dateisystem /dev/sdd2 aushängen. Der Mountpoint ist ihnen nicht bekannt. Mit welchem\n            Kommando können Sie das Dateisystem aushängen, ohne den Mountpoint vorher zu ermitteln? (Geben Sie das\n            Kommando mit Parametern ein!)\n\n\n            <br />",
+      "antwort": {
+        "@zuFrage": "Frage 112",
+        "@richtig": "ja",
+        "#text": "umount /dev/sdd2"
+      }
+    },
+    {
+      "fragetitel": "Frage 113",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 113 im Buch.",
+      "fragetext": "Sie haben Quotas auf den Festplatten eines Systems eingerichtet. Ein Benutzer fragt Sie, wie er\n            herausbekommen kann, wie viel Speicherplatz für ihn auf der Festplatte zur Verfügung steht.\n            Welches Programm werden Sie dem Benutzer empfehlen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 113",
+          "@richtig": "nein",
+          "#text": "edquota"
+        },
+        {
+          "@zuFrage": "Frage 113",
+          "@richtig": "nein",
+          "#text": "repquota"
+        },
+        {
+          "@zuFrage": "Frage 113",
+          "@richtig": "ja",
+          "#text": "quota"
+        },
+        {
+          "@zuFrage": "Frage 113",
+          "@richtig": "nein",
+          "#text": "df"
+        },
+        {
+          "@zuFrage": "Frage 113",
+          "@richtig": "nein",
+          "#text": "quotaon"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 114",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 114 im Buch.",
+      "fragetext": "Nachdem Sie Quotas auf einem System eingerichtet haben, beschwert sich ein Benutzer, dass er keine\n            Dateien mehr abspeichern kann. Sie stellen fest, dass der Benutzer für Videoschnitt zuständig ist und\n            deshalb einen erhöhten Bedarf an Speicherkapazität hat. Mit welchem Programm können Sie die Einstellungen\n            für de Benutzer ändern?",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 114",
+          "@richtig": "ja",
+          "#text": "edquota"
+        },
+        {
+          "@zuFrage": "Frage 114",
+          "@richtig": "nein",
+          "#text": "repquota"
+        },
+        {
+          "@zuFrage": "Frage 114",
+          "@richtig": "nein",
+          "#text": "quota"
+        },
+        {
+          "@zuFrage": "Frage 114",
+          "@richtig": "nein",
+          "#text": "useradd"
+        },
+        {
+          "@zuFrage": "Frage 114",
+          "@richtig": "nein",
+          "#text": "free"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 115",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 115 im Buch.",
+      "fragetext": "Sie müssen die Besitzrechte einiger Dateien an einen anderen Benutzer übertragen. Die Besitzergruppe\n            soll durch Ihren Eingriff nicht beeinträchtigt werden.\n            Welches Programm werden Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 115",
+          "@richtig": "nein",
+          "#text": "chmod"
+        },
+        {
+          "@zuFrage": "Frage 115",
+          "@richtig": "nein",
+          "#text": "chgrp"
+        },
+        {
+          "@zuFrage": "Frage 115",
+          "@richtig": "nein",
+          "#text": "newgrp"
+        },
+        {
+          "@zuFrage": "Frage 115",
+          "@richtig": "ja",
+          "#text": "chown"
+        },
+        {
+          "@zuFrage": "Frage 115",
+          "@richtig": "nein",
+          "#text": "umask"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 116",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 116 im Buch.",
+      "fragetext": "Sie müssen auf einem Dateiserver die Berechtigungen aller Dateien und Unterverzeichnisse unterhalb\n            von /Dokumente so ändern, dass nur die Besitzer und Besitzergruppen die Rechte zum lesen, schreiben und\n            ausführen erhalten. Allen anderen Benutzern soll der Zugriff auf diese Dateien verweigert werden.\n            Welche Kommandos können Sie hier verwenden? (Wählen Sie zwei Antworten!)",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 116",
+          "@richtig": "nein",
+          "#text": "chmod 660 /Dokumente -R"
+        },
+        {
+          "@zuFrage": "Frage 116",
+          "@richtig": "nein",
+          "#text": "chmod 770 /Dokumente"
+        },
+        {
+          "@zuFrage": "Frage 116",
+          "@richtig": "ja",
+          "#text": "chmod u=rwx,g=rwx /Dokumente -R"
+        },
+        {
+          "@zuFrage": "Frage 116",
+          "@richtig": "nein",
+          "#text": "chmod u=rwx,g=rwx /Dokumente"
+        },
+        {
+          "@zuFrage": "Frage 116",
+          "@richtig": "ja",
+          "#text": "chmod 770 /Dokumente -R"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 117",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 117 im Buch.",
+      "fragetext": "Ein Programm benötigt zur Ausführung erhöhte Rechte. Sie müssen dafür sorgen, dass das Programm mit\n            root-Rechten ausgeführt wird, auch wenn es durch einen normalen Benutzer ausgeführt wird. Der Besitzer des\n            Programms und auch die Besitzergruppe sind jeweils root.\n            Welches Kommando werden Sie verwenden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 117",
+          "@richtig": "nein",
+          "#text": "chmod 755 Programm"
+        },
+        {
+          "@zuFrage": "Frage 117",
+          "@richtig": "nein",
+          "#text": "chown Programm"
+        },
+        {
+          "@zuFrage": "Frage 117",
+          "@richtig": "nein",
+          "#text": "chown root:root Programm"
+        },
+        {
+          "@zuFrage": "Frage 117",
+          "@richtig": "nein",
+          "#text": "chmod 1755 Programm"
+        },
+        {
+          "@zuFrage": "Frage 117",
+          "@richtig": "ja",
+          "#text": "chmod 4755 Programm"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 118",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 118 im Buch.",
+      "fragetext": "Sie müssen Dokumente, die sich im Verzeichnis /Dokumente befinden, für alle Benutzer in ihren\n            jeweiligen Heimatverzeichnissen bereitstellen. Um die Datenmenge durch Kopieren nicht unnötig zu vergrößern,\n            entscheiden Sie sich mit Links zu arbeiten.\n            Welches Kommando wird den benötigten Link für den Benutzer Franz anlegen?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 118",
+          "@richtig": "nein",
+          "#text": "ln /Dokumente /home/franz/Doku"
+        },
+        {
+          "@zuFrage": "Frage 118",
+          "@richtig": "ja",
+          "#text": "ln -s /Dokumente /home/franz/Doku"
+        },
+        {
+          "@zuFrage": "Frage 118",
+          "@richtig": "nein",
+          "#text": "ln -s /home/franz/Doku /Dokumente"
+        },
+        {
+          "@zuFrage": "Frage 118",
+          "@richtig": "nein",
+          "#text": "ln /home/franz/Doku /Dokumente"
+        },
+        {
+          "@zuFrage": "Frage 118",
+          "@richtig": "nein",
+          "#text": "cp /Dokumente/* /home/franz/Doku -R"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 119",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 119 im Buch.",
+      "fragetext": "Sie konfigurieren einen neuen Webserver, der einen relativ statischen Inhalt bereitstellen wird.\n            Damit das root-Dateisystem nicht durch jahrelang unbeachtete Protokollierung voll läuft, wollen Sie eine\n            sinnvolle Partitionierung der Festplatte des Systems vornehmen.\n            Welches Verzeichnis sollte im vorliegenden Falle eine eigene Partition erhalten?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 119",
+          "@richtig": "nein",
+          "#text": "/etc"
+        },
+        {
+          "@zuFrage": "Frage 119",
+          "@richtig": "nein",
+          "#text": "/usr"
+        },
+        {
+          "@zuFrage": "Frage 119",
+          "@richtig": "ja",
+          "#text": "/var"
+        },
+        {
+          "@zuFrage": "Frage 119",
+          "@richtig": "nein",
+          "#text": "/bin"
+        },
+        {
+          "@zuFrage": "Frage 119",
+          "@richtig": "nein",
+          "#text": "/home"
+        }
+      ]
+    },
+    {
+      "fragetitel": "Frage 120",
+      "fragetyp": "auswahl",
+      "punkte": "1",
+      "hinweis": "keiner",
+      "erklaerung": "Entspricht Frage 120 im Buch.",
+      "fragetext": "Sie planen die Partitionierung eines neuen Systems. Damit Sie zur Datensicherung das Programm dump\n            einsetzen können, wollen Sie den Verzeichnissen, die besonders oft gesichert werden müssen, eine eigene\n            Partition zuteilen.\n            Welchen beiden der folgenden Verzeichnisse sollte unter diesen Gesichtspunkten möglichst eine eigene\n            Partition\n            zugewiesen werden?\n            <br />",
+      "antwort": [
+        {
+          "@zuFrage": "Frage 120",
+          "@richtig": "nein",
+          "#text": "/etc"
+        },
+        {
+          "@zuFrage": "Frage 120",
+          "@richtig": "ja",
+          "#text": "/home"
+        },
+        {
+          "@zuFrage": "Frage 120",
+          "@richtig": "ja",
+          "#text": "/var"
+        },
+        {
+          "@zuFrage": "Frage 120",
+          "@richtig": "nein",
+          "#text": "/boot"
+        },
+        {
+          "@zuFrage": "Frage 120",
+          "@richtig": "nein",
+          "#text": "/proc"
+        }
+      ]
+    }
+  ]
+}

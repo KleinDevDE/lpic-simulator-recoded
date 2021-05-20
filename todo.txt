@@ -1,0 +1,4 @@
+- Integrate Browser history to fully navigate through the sites loaded with JS.
+- Add the exam itself
+- Fix design bugs
+- Fix bugs in code

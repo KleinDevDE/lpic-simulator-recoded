@@ -1,0 +1,96 @@
+.vertical-and-horizontal-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    height:70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.choiceBox {
+    text-align: center;
+}
+
+.copyrightInfo {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.languageBar {
+    position: absolute;
+    top: 95%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.languageBar > .selected{
+    background-color: #808080;
+}
+
+.ap_profile_card {
+    margin: 30px auto;
+    max-width: 350px;
+}
+.ap_profile_card .card-img-top {
+    max-height: 170px;
+}
+.ap_profile_card .card-img-top img {
+    width: 100%;
+}
+.ap_profile_card .card-body {
+    padding-bottom: 15px;
+}
+.ap_profile_card .ap_author_meta {
+    position: relative;
+    margin-bottom: 48px;
+}
+.ap_profile_card .ap_author_meta img {
+    border: 3px solid #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: -41px;
+    width: 80px;
+}
+.ap_profile_card .ap_author_info {
+    position: absolute;
+    left: 93px;
+    top: -7px;
+}
+.ap_profile_card .ap_author_info .card-title {
+    margin-bottom: 8px;
+}
+.ap_profile_card .ap_author_info .card-subtitle {
+    font-weight: 300;
+}
+.ap_profile_card .card-text {
+    color: #666;
+}
+.ap_profile_card .card-body .fa-facebook {
+    color: #3a589b;
+}
+.ap_profile_card .card-body .fa-twitter {
+    color: #76a9ea;
+}
+.ap_profile_card .card-body .fa-google-plus {
+    color: #f34431;
+}
+.ap_profile_card .card-body .fa-instagram {
+    color: #517fa6;
+}
+.ap_profile_card .card-body .fa-youtube {
+    color: #d22215;
+}

@@ -1,0 +1,54 @@
+{
+  "main": {
+    "projectName": "LPIC Prüfungssimulator",
+    "version": "1.0.0",
+    "repository-link": "",
+    "copyrightInfo": "© 2008 <a href=\"http://galileopress.de)\">GalileoPress</a> & <a href=\"http://fisi-itse.de\">André Herrmann</a><br>© 2021 <a href=\"https://github.com/KleinDevDE\">@KleinDevDE</a> & <a href=\"https://github.com/ragnar76\">@ragnar76</a>",
+    "changelog": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "authors": {
+      "KleinDevDE": {
+        "real_name": "Maximilian Klein",
+        "website": "",
+        "email": "kontakt@kleindev.de",
+        "responsible": "Full-Stack developer",
+        "github": "https://github.com/KleinDevDE",
+        "twitter": "",
+        "about": "Made the full rework of the known LPIC Exam simulator CD."
+      },
+      "liberavia": {
+        "real_name": "Andrè Herrmann",
+        "website": "https://github.com/liberavia",
+        "email": "andre.gregor.herrmann@gmail.com",
+        "responsible": "",
+        "github": "https://github.com/liberavia",
+        "twitter": "",
+        "about": "Made the Software \"OnEducate\" which the previous version based on."
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "Prüfungssimulator zur Vorbereitung auf die<br>Linux Professional Institute Certification (LPIC)",
+      "buttons": {
+        "lpic1": "Prüfung LPIC 117-101 beginnen",
+        "lpic2": "Prüfung LPIC 117-102 beginnen",
+        "tutorial": "Bedienungsanleitung",
+        "about": "Über dieses Programm"
+      }
+    },
+    "about": {
+      "title": "Über dieses Programm",
+      "title_authorsAndContributors": "Autoren und Mitwirkende",
+      "title_copyright": "Copyright",
+      "title_license": "Lizenz",
+      "text_authorsAndContributors": "Folgende Entwickler halfen mit beim Aufbau dieser Software:",
+      "text_copyright": "",
+      "text_license": ""
+    }
+  }
+}

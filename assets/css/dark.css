@@ -1,0 +1,30 @@
+:root{
+    --background-color: #3c3c3c;
+    --main-color: #ef7222;
+    /*--main-color: #b45112;*/
+    /*--main-color-dark: #ef7222;*/
+    --main-color-dark: #b45112;
+    --main-color-light: #ff9957;
+}
+
+body {
+    color: #e8e8e8 !important;
+    background-color: var(--background-color) !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--main-color) !important;
+    border: none !important;
+}
+
+button {
+    color: #ffffff;
+    border-style: none;
+    border-radius: 3px !important;
+    background-color: var(--main-color);
+    line-height: 30px;
+}
+
+button:hover {
+    background-color: var(--main-color-dark);
+}

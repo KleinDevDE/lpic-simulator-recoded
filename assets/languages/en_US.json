@@ -1,0 +1,18 @@
+{
+  "main": {
+    "Website-Title" : "LPIC exam-simulator",
+    "copyrightInfo": "OnEducate Portable - Exam-Simulator Browserapplication in JavaScript<br/>Software is published under the terms of General Public License Version 2"
+  },
+  "pages":
+  {
+    "home": {
+      "title" : "Exam simulator to prepare for the<br>Linux Professional Institute Certification (LPIC)",
+      "buttons": {
+        "lpic1": "Start exam LPIC 117-101",
+        "lpic2": "Start exam LPIC 117-102",
+        "tutorial": "Tutorial",
+        "about": "About this site"
+      }
+    }
+  }
+}
