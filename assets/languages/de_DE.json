@@ -3,7 +3,7 @@
     "projectName": "LPIC Prüfungssimulator",
     "version": "1.0.0",
     "repository-link": "",
-    "copyrightInfo": "© 2008 <a href=\"http://galileopress.de)\">GalileoPress</a> & <a href=\"http://fisi-itse.de\">André Herrmann</a><br>© 2021 <a href=\"https://github.com/KleinDevDE\">@KleinDevDE</a> & <a href=\"https://github.com/ragnar76\">@ragnar76</a>",
+    "copyrightInfo": "© 2008 <a href=\"https://github.com/liberavia\">André Herrmann</a><br>© 2021 <a href=\"https://github.com/KleinDevDE\">Maximilian Klein</a>",
     "changelog": [
       "",
       "",
@@ -15,18 +15,16 @@
         "real_name": "Maximilian Klein",
         "website": "",
         "email": "kontakt@kleindev.de",
-        "responsible": "Full-Stack developer",
+        "responsible": "Backend developer",
         "github": "https://github.com/KleinDevDE",
-        "twitter": "",
         "about": "Made the full rework of the known LPIC Exam simulator CD."
       },
       "liberavia": {
         "real_name": "Andrè Herrmann",
         "website": "https://github.com/liberavia",
-        "email": "andre.gregor.herrmann@gmail.com",
+        "email": "",
         "responsible": "",
         "github": "https://github.com/liberavia",
-        "twitter": "",
         "about": "Made the Software \"OnEducate\" which the previous version based on."
       }
     }
